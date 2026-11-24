@@ -4,7 +4,7 @@ city: "Gdynia"
 slug: "rury-stalowe-gdynia"
 pubDate: 2021-10-13
 description: "Dostawa rur stalowych do Gdyni i okolic."
-source: "https://ecotechgroup.pl/dostawa-rur-stalowych/rury-stalowe-gdynia/"
+source: "https://ecotechgroup.pl/pipe-delivery/rury-stalowe-gdynia/"
 order: 13
 ---
 
@@ -12,7 +12,7 @@ order: 13
 
 <h2 class="wp-block-heading" id="sprawdzona-hurtownia-rur-w-gdyni-dzialamy-od-lat">Sprawdzona hurtownia rur: w<span class="thin-text"> Gdyni działamy od lat</span></h2>
 
-<p>Zajmujesz się budową konstrukcji stalowych w Gdyni? Szukasz sprawdzonego dostawcy <strong><a href="/rury-stalowe/">rur stalowych</a></strong>, któremu będziesz mógł zaufać? W naszej <strong>hurtowni </strong>z dostawą do <strong>Gdyni </strong>pracujemy na relacje z klientami od lat. Naszym priorytetem jest dostarczanie najwyższej jakości produktów od sprawdzonych producentów, szybka realizacja zamówień, a w razie potrzeby – fachowe doradztwo. Przekonaj się, dlaczego większość klientów wraca do nas po kolejne zamówienia!</p>
+<p>Zajmujesz się budową konstrukcji stalowych w Gdyni? Szukasz sprawdzonego dostawcy <strong><a href="/steel-pipes/">rur stalowych</a></strong>, któremu będziesz mógł zaufać? W naszej <strong>hurtowni </strong>z dostawą do <strong>Gdyni </strong>pracujemy na relacje z klientami od lat. Naszym priorytetem jest dostarczanie najwyższej jakości produktów od sprawdzonych producentów, szybka realizacja zamówień, a w razie potrzeby – fachowe doradztwo. Przekonaj się, dlaczego większość klientów wraca do nas po kolejne zamówienia!</p>
 
 <h2 class="wp-block-heading" id="potrzebujesz-rur-stalowych-w-gdyni-u-nas-nie-musisz-czekac">Potrzebujesz rur stalowych w Gdyni? <span class="thin-text">U nas nie musisz czekać</span></h2>
 
@@ -28,7 +28,7 @@ order: 13
 
 <h2 class="wp-block-heading" id="wyslij-zapytanie">Wyślij zapytanie</h2>
 
-<p><a href="/kontakt#formularz-kontaktowy">Przejdź do formularza kontaktowego</a></p>
+<p><a href="/contact/#formularz-kontaktowy">Przejdź do formularza kontaktowego</a></p>
 
 <p><strong>Masz pytania? Nie wiesz, jaki model, długość czy średnicę rury wybrać? Jesteśmy także po to, by dzielić się z Tobą naszym doświadczeniem. Skontaktuj się z nami telefonicznie lub e-mailowo, aby uzyskać pomoc!</strong></p>
 

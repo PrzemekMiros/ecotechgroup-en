@@ -4,7 +4,7 @@ city: "Radom"
 slug: "rury-stalowe-radom"
 pubDate: 2021-10-31
 description: "Dostawa rur stalowych do Radomia i okolic."
-source: "https://ecotechgroup.pl/dostawa-rur-stalowych/rury-stalowe-radom/"
+source: "https://ecotechgroup.pl/pipe-delivery/rury-stalowe-radom/"
 order: 11
 ---
 
@@ -16,7 +16,7 @@ order: 11
 
 <p><strong>Hurtownia rur w Radomiu</strong>, w której znajdziesz wszystkie rodzaje produktów niezbędnych do realizacji Twojego projektu? Materiałów nie musisz kupować stacjonarnie – wybierz wygodę i zamawiaj przez internet. Na naszej stronie znajdziesz intuicyjną wyszukiwarkę, która pomoże Ci w wyborze odpowiednich rur do Twojego projektu.&nbsp;</p>
 
-<p>Nasza oferta to rury zwijane z blachy, rury ze szwem wzdłużnym i spiralnym i inne popularne rodzaje <strong><a href="/rury-stalowe/">rur stalowych</a></strong>. W Radomiu nie znajdziesz produktów w lepszych cenach – dzięki bezpośredniej współpracy z producentami możemy zaproponować naszym klientom konkurencyjne warunki.</p>
+<p>Nasza oferta to rury zwijane z blachy, rury ze szwem wzdłużnym i spiralnym i inne popularne rodzaje <strong><a href="/steel-pipes/">rur stalowych</a></strong>. W Radomiu nie znajdziesz produktów w lepszych cenach – dzięki bezpośredniej współpracy z producentami możemy zaproponować naszym klientom konkurencyjne warunki.</p>
 
 <h2 class="wp-block-heading" id="wybierz-rozwiazanie-dla-siebie-rury-stalowe-nowe-i-uzywane">Wybierz rozwiązanie dla siebie: rury stalowe nowe i używane</h2>
 
@@ -30,7 +30,7 @@ order: 11
 
 <h2 class="wp-block-heading" id="wyslij-zapytanie">Wyślij zapytanie</h2>
 
-<p><a href="/kontakt#formularz-kontaktowy">Przejdź do formularza kontaktowego</a></p>
+<p><a href="/contact/#formularz-kontaktowy">Przejdź do formularza kontaktowego</a></p>
 
 <p>Potrzebujesz dostawy <strong>rur stalowych do Radomia</strong>? Złóż zamówienie! Jeśli potrzebujesz fachowego doradztwa, napisz do nas lub zadzwoń!</p>
 

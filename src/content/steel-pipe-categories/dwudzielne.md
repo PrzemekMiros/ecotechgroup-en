@@ -14,7 +14,7 @@ faq:
 description: "Rury stalowe dwudzielne do ochrony istniejących przewodów, rurociągów i instalacji."
 image: "/img/pipes/rury-dwudzielne-na-samochodzie.webp"
 imageAlt: "Rury stalowe dwudzielne na samochodzie"
-source: "https://ecotechgroup.pl/rury-stalowe-dwudzielne/"
+source: "https://ecotechgroup.pl/steel-pipes-split/"
 order: 5
 ---
 

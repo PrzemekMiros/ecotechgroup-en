@@ -7,17 +7,17 @@ const payload = {
   description: 'Importer, dystrybutor i hurtownia rur stalowych oraz producent konstrukcji stalowych.',
   website: 'https://ecotechgroup.pl/',
   offer: [
-    { name: 'Rury stalowe', url: 'https://ecotechgroup.pl/rury-stalowe/' },
-    { name: 'Usługi obróbki i konserwacji rur', url: 'https://ecotechgroup.pl/uslugi/' },
-    { name: 'Produkcja elementów i konstrukcji stalowych', url: 'https://ecotechgroup.pl/produkcja/' },
-    { name: 'Dostawa rur stalowych', url: 'https://ecotechgroup.pl/dostawa-rur-stalowych/' }
+    { name: 'Rury stalowe', url: 'https://ecotechgroup.pl/steel-pipes/' },
+    { name: 'Usługi obróbki i konserwacji rur', url: 'https://ecotechgroup.pl/services/' },
+    { name: 'Produkcja elementów i konstrukcji stalowych', url: 'https://ecotechgroup.pl/manufacturing/' },
+    { name: 'Dostawa rur stalowych', url: 'https://ecotechgroup.pl/pipe-delivery/' }
   ],
   contact: {
     email: 'sprzedaz@ecotechgroup.pl',
     phone: '+48 508 299 077',
     address: 'ul. Mieczysława Pożaryskiego 32, 04-703 Warszawa, Polska',
     hours: 'poniedziałek–piątek, 8:00–16:00 Europe/Warsaw',
-    url: 'https://ecotechgroup.pl/kontakt/'
+    url: 'https://ecotechgroup.pl/contact/'
   }
 };
 

@@ -17,7 +17,7 @@ imageAlt: "|||||||"
 
 
 
-<p>Do produkcji kominów przemysłowych w Eco-Tech wykorzystujemy <strong><a class="rank-math-link" href="/rury-stalowe/">rury stalowe</a></strong> o średnicach od 219 do 1620 mm, które również wytwarzane są przez nas. Dzięki temu dla każdego zlecenia z zakresu produkcji kominów przemysłowych jesteśmy w stanie zapewnić bardzo szybki termin realizacji i najwyższą jakość. Współpracujemy zarówno z dystrybutorami, jak i z klientami finalnymi, którzy składają zamówienia na pojedyncze wyroby.</p>
+<p>Do produkcji kominów przemysłowych w Eco-Tech wykorzystujemy <strong><a class="rank-math-link" href="/steel-pipes/">rury stalowe</a></strong> o średnicach od 219 do 1620 mm, które również wytwarzane są przez nas. Dzięki temu dla każdego zlecenia z zakresu produkcji kominów przemysłowych jesteśmy w stanie zapewnić bardzo szybki termin realizacji i najwyższą jakość. Współpracujemy zarówno z dystrybutorami, jak i z klientami finalnymi, którzy składają zamówienia na pojedyncze wyroby.</p>
 
 
 

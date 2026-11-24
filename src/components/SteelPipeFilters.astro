@@ -24,7 +24,7 @@ const availableProducts = values.type
   ? products.filter((product) => product.data.category === values.type)
   : products;
 const filters = pipeFilterOptions(availableProducts);
-const resetUrl = category ? `/rury-stalowe-${category}/` : "/rury-stalowe/";
+const resetUrl = category ? `/steel-pipes-${category}/` : "/steel-pipes/";
 const categoryNames: Record<string, string> = {
   "bez-szwu": "Seamless",
   dwudzielne: "Split",
@@ -48,7 +48,7 @@ const categoryNames: Record<string, string> = {
   </p>
   <form
     method="get"
-    action="/rury-stalowe/#results"
+    action="/steel-pipes/#results"
     class="mt-6 space-y-5"
     aria-label="Steel pipe filters"
     data-pipe-filters

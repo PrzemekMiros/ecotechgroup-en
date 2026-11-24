@@ -4,13 +4,13 @@ city: "Wrocław"
 slug: "rury-stalowe-wroclaw"
 pubDate: 2021-04-30
 description: "Dostawa rur stalowych do Wrocławia i okolic."
-source: "https://ecotechgroup.pl/dostawa-rur-stalowych/rury-stalowe-wroclaw/"
+source: "https://ecotechgroup.pl/pipe-delivery/rury-stalowe-wroclaw/"
 order: 16
 ---
 
 <h2 class="wp-block-heading">Rury stalowe – Wrocław wybiera wysoką jakość</h2>
 
-<p>Jeśli poszukujesz sprawdzonego dostawcy rur stalowych, dobrze trafiłeś. Nasz profesjonalizm, partnerskie podejście i bogaty asortyment doceniło już wielu inwestorów oraz przedsiębiorców m.in. z miasta Wrocław. <a target="_blank" rel="noreferrer noopener" href="/rury-stalowe/">Rury stalowe</a>, które posiadamy w ofercie, prawdopodobnie i Ciebie przekonają swoją niebywałą solidnością, trwałością, odpornością na obciążenia oraz dopracowanym wykończeniem. Są to wyroby pochodzące z linii produkcyjnych najlepszych producentów działających w Polsce i zagranicą, a dzięki nam masz możliwość nabyć je w dogodny sposób.</p>
+<p>Jeśli poszukujesz sprawdzonego dostawcy rur stalowych, dobrze trafiłeś. Nasz profesjonalizm, partnerskie podejście i bogaty asortyment doceniło już wielu inwestorów oraz przedsiębiorców m.in. z miasta Wrocław. <a target="_blank" rel="noreferrer noopener" href="/steel-pipes/">Rury stalowe</a>, które posiadamy w ofercie, prawdopodobnie i Ciebie przekonają swoją niebywałą solidnością, trwałością, odpornością na obciążenia oraz dopracowanym wykończeniem. Są to wyroby pochodzące z linii produkcyjnych najlepszych producentów działających w Polsce i zagranicą, a dzięki nam masz możliwość nabyć je w dogodny sposób.</p>
 
 <p>Rury stalowe precyzyjne, w tym ciągnione na zimno, to nasza specjalność. Każda z tych rur stalowych jest produkowana przez najlepszych producentów w Polsce i za granicą, co gwarantuje ich najwyższą jakość. Oferujemy również rury ocynkowane, które znajdują szerokie zastosowanie w przemyśle budowlanym oraz instalacyjnym.</p>
 
@@ -94,7 +94,7 @@ order: 16
 
 <h2 class="wp-block-heading mt-30" id="wyslij-zapytanie">Wyślij zapytanie</h2>
 
-<p><a href="/kontakt#formularz-kontaktowy">Przejdź do formularza kontaktowego</a></p>
+<p><a href="/contact/#formularz-kontaktowy">Przejdź do formularza kontaktowego</a></p>
 
 <blockquote class="wp-block-quote">
 <p>Spółka Eco-Tech od wielu lat zajmuje się sprzedażą rur stalowych. Wrocław to jedno z miast, w którym wielu przedsiębiorców i inwestorów realizuje projekty właśnie z wykorzystaniem oferowanych przez nas wyrobów. Mamy nadzieję, że do nich dołączysz!</p>

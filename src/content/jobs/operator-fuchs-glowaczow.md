@@ -4,7 +4,7 @@ slug: "operator-fuchs-glowaczow"
 pubDate: 2025-09-20
 location: "Głowaczów"
 description: "Oferta pracy dla operatora maszyn przeładunkowych Fuchs w Głowaczowie."
-source: "https://ecotechgroup.pl/praca/operator-fuchs-glowaczow/"
+source: "https://ecotechgroup.pl/careers/operator-fuchs-glowaczow/"
 order: 3
 ---
 

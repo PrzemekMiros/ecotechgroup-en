@@ -4,6 +4,7 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
 import PageHero from "../../components/PageHero.astro";
 import OfferTile from "../../components/OfferTile.astro";
 import { itemListSchema } from "../../lib/structured-data";
+import { urls } from "../../lib/urls";
 const services = (await getCollection("services")).sort(
   (a, b) => a.data.order - b.data.order,
 );
@@ -26,7 +27,7 @@ const names: Record<string, string> = {
       "Services",
       services.map(({ data }) => ({
         name: names[data.slug] || data.title,
-        path: `/uslugi/${data.slug}`,
+        path: urls.service(data.slug),
       })),
     ),
   ]}
@@ -36,7 +37,7 @@ const names: Record<string, string> = {
     <div class="grid gap-x-8 gap-y-12 md:grid-cols-2">
       {services.map((service) => (
         <OfferTile
-          href={`/uslugi/${service.data.slug}/`}
+          href={urls.service(service.data.slug)}
           title={names[service.data.slug] || service.data.title}
           image={service.data.image}
           imageAlt={service.data.imageAlt}

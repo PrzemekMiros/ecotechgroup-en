@@ -4,7 +4,7 @@ slug: "magazynier-kobierne"
 pubDate: 2025-08-04
 location: "Kobierne"
 description: "Oferta pracy dla magazyniera w Kobiernem."
-source: "https://ecotechgroup.pl/praca/magazynier-kobierne/"
+source: "https://ecotechgroup.pl/careers/magazynier-kobierne/"
 order: 2
 ---
 

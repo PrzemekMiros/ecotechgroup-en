@@ -1,13 +1,14 @@
 ---
-import { getCollection, type CollectionEntry } from "astro:content";
+import { getCollection, render, type CollectionEntry } from "astro:content";
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import PageHero from "../../components/PageHero.astro";
 import { serviceSchema } from "../../lib/structured-data";
+import { englishSlug, urls } from "../../lib/urls";
 export const prerender = true;
 export async function getStaticPaths() {
   const services = await getCollection("services");
   return services.map((service) => ({
-    params: { slug: service.data.slug },
+    params: { slug: englishSlug(service.data.slug) },
     props: { service },
   }));
 }
@@ -15,103 +16,165 @@ interface Props {
   service: CollectionEntry<"services">;
 }
 const { service } = Astro.props;
-const content: Record<
-  string,
-  { title: string; intro: string; details: string[] }
-> = {
-  "spawanie-i-produkcja-rurociagow-stalowych": {
-    title: "Steel pipeline welding and fabrication",
-    intro:
-      "We fabricate and weld steel pipelines for industrial and infrastructure projects.",
-    details: [
-      "Our team matches the welding method, material and scope of work to the technical documentation and operating conditions.",
-      "We can support the project from material preparation through fabrication to delivery of completed components.",
-    ],
-  },
-  "skup-rur-stalowych": {
-    title: "Steel pipe purchase",
-    intro:
-      "We purchase used steel pipes and offer an efficient, transparent assessment process.",
-    details: [
-      "Send the pipe dimensions, condition, quantity and collection location for an individual offer.",
-      "We arrange logistics and agree the collection terms for the selected material.",
-    ],
-  },
-  "montaz-rur-stalowych-dwudzielnych": {
-    title: "Split steel pipe installation",
-    intro:
-      "We install split steel pipes for the protection and renovation of existing pipelines.",
-    details: [
-      "The installation process is tailored to the pipe diameter, site conditions and project requirements.",
-      "Contact us with the technical data to discuss the suitable solution.",
-    ],
-  },
-  "malowanie-rur-od-wewnatrz": {
-    title: "Internal pipe coating",
-    intro:
-      "We apply internal protective coatings that help improve corrosion resistance and service life.",
-    details: [
-      "The coating system is selected according to the conveyed medium and operating environment.",
-      "We confirm the required surface preparation and quality requirements before work begins.",
-    ],
-  },
-  "laminowanie-rur-stalowych": {
-    title: "Steel pipe lamination",
-    intro:
-      "We provide laminated protective layers for steel pipes used in demanding operating conditions.",
-    details: [
-      "The scope and system are selected individually for the application and expected exposure.",
-      "Ask us for a quotation based on dimensions, quantity and technical requirements.",
-    ],
-  },
-  "izolowanie-rur-stalowych": {
-    title: "Steel pipe insulation",
-    intro:
-      "We provide insulation and anti-corrosion protection for steel pipes.",
-    details: [
-      "Available systems include solutions selected for underground, industrial and infrastructure applications.",
-      "We agree the coating type, thickness, preparation standard and documentation for each order.",
-    ],
-  },
-};
-const page = content[service.data.slug] || {
-  title: service.data.title,
-  intro:
-    "Professional steel-pipe services for industrial and infrastructure projects.",
-  details: [
-    "We prepare the scope of work individually according to your technical requirements.",
-    "Contact us to discuss availability, schedule and pricing.",
-  ],
-};
+const { Content } = await render(service);
 ---
 
 <BaseLayout
-  title={`${page.title} | Eco Tech Group`}
-  description={page.intro}
+  title={`${service.data.title} | Eco Tech Group`}
+  description={service.data.description}
   image={service.data.image}
-  imageAlt={page.title}
-  structuredData={[serviceSchema(page.title, page.intro, Astro.url.pathname)]}
+  imageAlt={service.data.imageAlt}
+  structuredData={[
+    serviceSchema(
+      service.data.title,
+      service.data.description,
+      Astro.url.pathname,
+    ),
+  ]}
 >
   <article class="service-page">
     <PageHero
-      title={page.title}
-      breadcrumbs={[{ label: "Services", href: "/uslugi/" }]}
+      title={service.data.title}
+      breadcrumbs={[{ label: "Services", href: urls.services }]}
       image={service.data.image}
-      imageAlt={page.title}
+      imageAlt={service.data.imageAlt ?? service.data.title}
     />
     <section class="mx-auto max-w-7xl px-5 py-16 md:px-8 lg:py-24">
-      <div class="max-w-4xl text-base leading-7 text-ink/75">
-        <p class="text-xl leading-8 text-ink md:text-2xl">{page.intro}</p>
-        {page.details.map((detail) => (
-          <p class="mt-6">{detail}</p>
-        ))}
-        <a
-          href="/kontakt/"
-          class="mt-10 inline-flex bg-accent-1 px-7 py-4 text-sm font-semibold text-white hover:bg-accent-1/85"
-        >
-          Request a quotation
-        </a>
+      <div class="service-content max-w-6xl">
+        <Content />
       </div>
     </section>
   </article>
 </BaseLayout>
+<style>
+  .service-content {
+    color: #586d85;
+  }
+  .service-content :global(p),
+  .service-content :global(li) {
+    font-size: clamp(0.9375rem, 0.91rem + 0.15vw, 1rem);
+    line-height: 1.7;
+  }
+  .service-content :global(p + p) {
+    margin-top: 1.25rem;
+  }
+  .service-content :global(a) {
+    color: var(--color-accent-1);
+    font-weight: 600;
+    text-decoration: underline;
+    text-underline-offset: 0.16em;
+  }
+  .service-content :global(a:hover) {
+    color: var(--color-ink);
+  }
+  .service-content :global(strong),
+  .service-content :global(h2),
+  .service-content :global(h3),
+  .service-content :global(h4) {
+    color: #142b3a;
+    font-weight: 600;
+  }
+  .service-content :global(h2) {
+    margin-top: 3.25rem;
+    font-size: clamp(1.7rem, 1.45rem + 1vw, 2rem);
+    line-height: 1.18;
+    letter-spacing: -0.035em;
+  }
+  .service-content :global(h3) {
+    margin-top: 2.25rem;
+    font-size: clamp(1.25rem, 1.12rem + 0.6vw, 1.5rem);
+    line-height: 1.3;
+  }
+  .service-content :global(h4) {
+    margin-top: 1.75rem;
+  }
+  .service-content :global(.thin-text) {
+    font-weight: 400;
+  }
+  .service-content :global(ul) {
+    margin-top: 1.5rem;
+    list-style: circle;
+    padding-left: 1.25rem;
+  }
+  .service-content :global(li + li) {
+    margin-top: 0.45rem;
+  }
+  .service-content :global(hr) {
+    margin: 1.5rem 0;
+    border: 0;
+    border-top: 1px solid rgb(20 43 58 / 14%);
+  }
+  .service-content :global(.et-line-yellow) {
+    width: 4rem;
+    border-color: var(--color-sun);
+    border-top-width: 2px;
+  }
+  .service-content :global(.wp-block-columns) {
+    display: grid;
+    gap: 1.5rem;
+    margin: 2.5rem 0;
+  }
+  .service-content :global(.wp-block-column) {
+    min-width: 0;
+  }
+  .service-content :global(figure) {
+    margin: 2rem 0;
+    overflow: hidden;
+  }
+  .service-content :global(figure a) {
+    display: block;
+    height: 100%;
+  }
+  .service-content :global(figure img) {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .service-content :global(.wp-block-columns figure) {
+    margin: 0;
+    aspect-ratio: 16 / 9;
+  }
+  .service-content :global(.wp-block-gallery) {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+  }
+  .service-content :global(.wp-block-gallery > figure) {
+    margin: 0;
+    aspect-ratio: 16 / 9;
+  }
+  .service-content :global(table) {
+    margin-top: 1.75rem;
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.95rem;
+  }
+  .service-content :global(th),
+  .service-content :global(td) {
+    border: 1px solid rgb(20 43 58 / 16%);
+    padding: 0.85rem;
+    text-align: left;
+    vertical-align: top;
+  }
+  .service-content :global(th) {
+    background: #edf3eb;
+    color: #142b3a;
+    font-weight: 600;
+  }
+  @media (min-width: 48rem) {
+    .service-content :global(.wp-block-columns) {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+  @media (max-width: 47.99rem) {
+    .service-content
+      :global(.wp-block-columns.reverse-mob > .wp-block-column:first-child) {
+      order: 2;
+    }
+    .service-content
+      :global(.wp-block-columns.reverse-mob > .wp-block-column:nth-child(2)) {
+      order: 1;
+    }
+  }
+</style>

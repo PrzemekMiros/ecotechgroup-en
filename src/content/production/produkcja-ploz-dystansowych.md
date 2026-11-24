@@ -73,7 +73,7 @@ imageAlt: "||||"
 
 <div class="wp-block-columns">
 <div class="wp-block-column">
-<p>Płozy dystansowe to wyroby stosowane celem dodatkowego zabezpieczenia rur przewodowych prowadzonych w rurach osłonowych. Stalowe płozy prowadzące wykorzystywane są głównie w problematycznych przepustach, czyli takich, w których niemożliwe jest zastosowanie płóz wykonanych z tworzywa sztucznego. Niemożność ta może wynikać np. ze zbyt dużej wagi rury wraz z medium albo specyficznych wymagań dotyczących umieszczenia rury przewodowej wewnątrz rury osłonowej, których spełnienie możliwe jest jedynie przy użyciu płóz dystansowych ze stali. Stalowe płozy dystansowe mogą być także stosowane jako alternatywa dla płóz z tworzywa sztucznego. Często stanowią pierwszy i ostatni obwód w dłuższych przeciskach, zwłaszcza złożonych z <strong><a href="/rury-stalowe/">rur stalowych</a></strong> o dużej wadze i średnicy.</p>
+<p>Płozy dystansowe to wyroby stosowane celem dodatkowego zabezpieczenia rur przewodowych prowadzonych w rurach osłonowych. Stalowe płozy prowadzące wykorzystywane są głównie w problematycznych przepustach, czyli takich, w których niemożliwe jest zastosowanie płóz wykonanych z tworzywa sztucznego. Niemożność ta może wynikać np. ze zbyt dużej wagi rury wraz z medium albo specyficznych wymagań dotyczących umieszczenia rury przewodowej wewnątrz rury osłonowej, których spełnienie możliwe jest jedynie przy użyciu płóz dystansowych ze stali. Stalowe płozy dystansowe mogą być także stosowane jako alternatywa dla płóz z tworzywa sztucznego. Często stanowią pierwszy i ostatni obwód w dłuższych przeciskach, zwłaszcza złożonych z <strong><a href="/steel-pipes/">rur stalowych</a></strong> o dużej wadze i średnicy.</p>
 </div>
 
 
@@ -119,7 +119,7 @@ imageAlt: "||||"
           </h2>
        </div>
        <div class="service-button-wrap">
-           <a href="/kontakt/" class="et-button">
+           <a href="/contact/" class="et-button">
                  Kontakt
            </a>
        </div>

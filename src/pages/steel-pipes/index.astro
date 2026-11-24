@@ -48,7 +48,7 @@ const names: Record<string, string> = {
           "Steel pipe categories",
           categories.map(({ data }) => ({
             name: names[data.slug] || data.title,
-            path: `/rury-stalowe-${data.slug}/`,
+            path: `/steel-pipes-${data.slug}/`,
           })),
         ),
   ]}
@@ -89,7 +89,7 @@ const names: Record<string, string> = {
               <p class="mt-3">
                 No pipes match the selected criteria. Change the parameters,
                 clear the filters or{" "}
-                <a href="/kontakt/" class="text-accent-1 underline">
+                <a href="/contact/" class="text-accent-1 underline">
                   ask us to select a pipe
                 </a>
                 .
@@ -115,7 +115,7 @@ const names: Record<string, string> = {
         >
           {categories.map((category) => (
             <a
-              href={`/rury-stalowe-${category.data.slug}/`}
+              href={`/steel-pipes-${category.data.slug}/`}
               class="inline-flex items-center rounded-md border border-accent-1 bg-white px-3 py-2 text-base leading-6 text-accent-1 hover:bg-accent-1 hover:text-white"
             >
               {names[category.data.slug] || category.data.title}

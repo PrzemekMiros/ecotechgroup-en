@@ -14,7 +14,7 @@ faq:
 description: "Rury stalowe bez szwu do instalacji i konstrukcji pracujących pod dużym obciążeniem oraz ciśnieniem."
 image: "/img/pipes/Rury-stalowe-bez-szwu.webp"
 imageAlt: "Rury stalowe bez szwu"
-source: "https://ecotechgroup.pl/rury-stalowe-bez-szwu/"
+source: "https://ecotechgroup.pl/steel-pipes-seamless/"
 order: 3
 ---
 

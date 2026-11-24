@@ -18,9 +18,9 @@ export function englishSlug(slug: string) {
     .replace(/^rura-stalowa-ze-szwem-spiralnym/, 'spiral-welded-steel-pipe')
     .replace(/^rura-stalowa-ze-szwem-wzdluznym/, 'longitudinally-welded-steel-pipe')
     .replace(/^rura-stalowa-zwijana-z-blachy/, 'plate-rolled-steel-pipe')
-    .replace(/rury-stalowe/g, 'steel-pipes')
+    .replace(/steel-pipes/g, 'steel-pipes')
     .replace(/dostawa/g, 'delivery')
-    .replace(/praca/g, 'careers');
+    .replace(/careers/g, 'careers');
 }
 
 export const urls = {

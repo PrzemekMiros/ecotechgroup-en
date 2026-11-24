@@ -4,7 +4,7 @@ slug: "specjalista-specjalistka-ds-realizacji-zamowien"
 pubDate: 2026-07-13
 location: "Warszawa"
 description: "Oferta pracy w obszarze realizacji zamówień w Warszawie."
-source: "https://ecotechgroup.pl/praca/specjalista-specjalistka-ds-realizacji-zamowien/"
+source: "https://ecotechgroup.pl/careers/specjalista-specjalistka-ds-realizacji-zamowien/"
 order: 6
 ---
 

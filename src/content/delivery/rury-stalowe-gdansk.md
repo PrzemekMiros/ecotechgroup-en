@@ -4,7 +4,7 @@ city: "Gdańsk"
 slug: "rury-stalowe-gdansk"
 pubDate: 2021-10-13
 description: "Dostawa rur stalowych do Gdańska i okolic."
-source: "https://ecotechgroup.pl/dostawa-rur-stalowych/rury-stalowe-gdansk/"
+source: "https://ecotechgroup.pl/pipe-delivery/rury-stalowe-gdansk/"
 order: 12
 ---
 
@@ -16,7 +16,7 @@ order: 12
 
 <p>Dzięki wieloletniemu doświadczeniu na rynku wiemy, jakich rodzajów rur i elementów stalowych najczęściej potrzebują nasi klienci. Znajdziesz u nas rury bezszwowe, izolowane oraz z różnymi rodzajami szwów: spiralnymi lub wzdłużnymi.</p>
 
-<p>W naszej ofercie znajdują się także szczególne typy <strong><a href="/rury-stalowe/">rur stalowych</a>. W Gdańsku</strong>, jako mieście portowym, nasi klienci często potrzebują np. rur zwijanych z blachy, wykorzystywanych w przemyśle morskim.</p>
+<p>W naszej ofercie znajdują się także szczególne typy <strong><a href="/steel-pipes/">rur stalowych</a>. W Gdańsku</strong>, jako mieście portowym, nasi klienci często potrzebują np. rur zwijanych z blachy, wykorzystywanych w przemyśle morskim.</p>
 
 <h2 class="wp-block-heading" id="dostawa-rur-stalowych-do-gdanska-dla-nas-to-nie-problem">Dostawa rur stalowych do Gdańska? <span class="thin-text">Dla nas to nie problem!</span></h2>
 
@@ -30,7 +30,7 @@ order: 12
 
 <h2 class="wp-block-heading" id="wyslij-zapytanie">Wyślij zapytanie</h2>
 
-<p><a href="/kontakt#formularz-kontaktowy">Przejdź do formularza kontaktowego</a></p>
+<p><a href="/contact/#formularz-kontaktowy">Przejdź do formularza kontaktowego</a></p>
 
 <p>Zastanawiasz się, który z produktów z naszej <strong>hurtowni rur</strong> zamówić do <strong>Gdańska</strong>? Chętnie pomożemy Ci dokonać właściwego wyboru. Nasze atuty to nie tylko wysoka jakość produktów i stała dostępność, ale także doświadczenie i gotowość do pomocy naszym klientom.&nbsp;</p>
 

@@ -30,15 +30,15 @@ imageAlt: "PHOTO-2023-03-20-22-34-28(1)"
 
 
 <ul class="wp-block-list">
-<li><a href="/rury-stalowe-ze-szwem-wzdluznym/">rury stalowe ze szwem</a></li>
+<li><a href="/steel-pipes-longitudinally-welded/">rury stalowe ze szwem</a></li>
 
 
 
-<li><a href="/rury-stalowe-bez-szwu/">rury stalowe bezszwowe</a></li>
+<li><a href="/steel-pipes-seamless/">rury stalowe bezszwowe</a></li>
 
 
 
-<li><a href="/rury-stalowe-w-izolacji/">rury w izolacji.</a></li>
+<li><a href="/steel-pipes-insulated/">rury w izolacji.</a></li>
 </ul>
 
 

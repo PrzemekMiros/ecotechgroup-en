@@ -1,18 +1,19 @@
 ---
 import NavigationLink from "./NavigationLink.astro";
+import { urls } from "../lib/urls";
 const quickLinks = [
-  { href: "/rury-stalowe/", label: "Steel pipes" },
-  { href: "/uslugi/", label: "Services" },
-  { href: "/produkcja/", label: "Manufacturing" },
-  { href: "/dostawa-rur-stalowych/", label: "Pipe delivery" },
-  { href: "/kontakt/", label: "Contact" },
+  { href: urls.steelPipes, label: "Steel pipes" },
+  { href: urls.services, label: "Services" },
+  { href: urls.manufacturing, label: "Manufacturing" },
+  { href: urls.delivery, label: "Pipe delivery" },
+  { href: urls.contact, label: "Contact" },
 ];
 const companyLinks = [
-  { href: "/o-nas/", label: "About us" },
-  { href: "/aktualnosci/", label: "News" },
-  { href: "/do-pobrania/", label: "Downloads" },
-  { href: "/praca/", label: "Careers" },
-  { href: "/kalkulator-wagi-rur-stalowych/", label: "Pipe weight calculator" },
+  { href: urls.about, label: "About us" },
+  { href: urls.news, label: "News" },
+  { href: urls.downloads, label: "Downloads" },
+  { href: urls.careers, label: "Careers" },
+  { href: urls.calculator, label: "Pipe weight calculator" },
 ];
 ---
 
@@ -124,7 +125,7 @@ const companyLinks = [
           </div>
         </dl>
         <a
-          href="/kontakt/"
+          href={urls.contact}
           class="mt-4 inline-flex text-sm font-semibold text-sun transition-colors hover:text-white"
         >
           View map →
@@ -146,10 +147,10 @@ const companyLinks = [
         </a>
       </div>
       <div class="flex flex-wrap items-center gap-x-6 gap-y-3 border-t border-white/10 px-6 py-5 text-sm text-white/50 md:border-l md:border-t-0 md:px-8">
-        <NavigationLink href="/polityka-prywatnosci/" class="hover:text-white">
+        <NavigationLink href={urls.privacy} class="hover:text-white">
           Privacy policy
         </NavigationLink>
-        <NavigationLink href="/kontakt/" masked class="hover:text-white">
+        <NavigationLink href={urls.contact} masked class="hover:text-white">
           Cookies
         </NavigationLink>
       </div>

@@ -4,7 +4,7 @@ city: "Lublin"
 slug: "rury-stalowe-lublin"
 pubDate: 2021-10-31
 description: "Dostawa rur stalowych do Lublina i okolic."
-source: "https://ecotechgroup.pl/dostawa-rur-stalowych/rury-stalowe-lublin/"
+source: "https://ecotechgroup.pl/pipe-delivery/rury-stalowe-lublin/"
 order: 8
 ---
 
@@ -16,7 +16,7 @@ order: 8
 
 <p>Dzięki współpracy z czołowymi <strong>producentami rur,</strong> do Lublina możemy dostarczyć także produkty o niestandardowych parametrach. Jesteśmy otwarci na potrzeby naszych klientów i w razie potrzeby zawsze kontaktujemy się bezpośrednio z przedstawicielami współpracujących z nami fabryk, aby znaleźć optymalne rozwiązanie. Nasza oferta obejmuje również rury konstrukcyjne oraz pręty zbrojeniowe, co czyni ją atrakcyjną zarówno dla firm budowlanych, jak i klientów indywidualnych.</p>
 
-<p><a target="_blank" rel="noreferrer noopener" href="/rury-stalowe/">Rury stalowe</a> z naszej oferty pochodzą z zakładów znajdujących się na terenie Unii Europejskiej, a także Rosji i Ukrainy. Wszystkie produkty przechodzą ścisłą kontrolę jakości: na miejscu, w fabryce, a także w naszej hurtowni.</p>
+<p><a target="_blank" rel="noreferrer noopener" href="/steel-pipes/">Rury stalowe</a> z naszej oferty pochodzą z zakładów znajdujących się na terenie Unii Europejskiej, a także Rosji i Ukrainy. Wszystkie produkty przechodzą ścisłą kontrolę jakości: na miejscu, w fabryce, a także w naszej hurtowni.</p>
 
 <p>Zdajemy sobie sprawę z tego, że projektując i realizując <strong>konstrukcje stalowe w Lublinie</strong> dla swoich zleceniodawców, możesz potrzebować rur o różnych parametrach.</p>
 
@@ -42,11 +42,11 @@ order: 8
 
 <h2 class="wp-block-heading">Kontakt</h2>
 
-<p>Serdecznie zapraszamy do <a target="_blank" rel="noreferrer noopener" href="/kontakt">kontaktu</a> z naszą hurtownią stali. Nasz zespół handlowy jest do Państwa dyspozycji i gotów odpowiedzieć na wszystkie pytania dotyczące naszych produktów i usług. Jesteśmy tutaj, aby pomóc Ci w wyborze najlepszych rozwiązań dla Twojej inwestycji.</p>
+<p>Serdecznie zapraszamy do <a target="_blank" rel="noreferrer noopener" href="/contact/">kontaktu</a> z naszą hurtownią stali. Nasz zespół handlowy jest do Państwa dyspozycji i gotów odpowiedzieć na wszystkie pytania dotyczące naszych produktów i usług. Jesteśmy tutaj, aby pomóc Ci w wyborze najlepszych rozwiązań dla Twojej inwestycji.</p>
 
 <h2 class="wp-block-heading" id="wyslij-zapytanie">Wyślij zapytanie</h2>
 
-<p><a href="/kontakt#formularz-kontaktowy">Przejdź do formularza kontaktowego</a></p>
+<p><a href="/contact/#formularz-kontaktowy">Przejdź do formularza kontaktowego</a></p>
 
 <iframe title="Mapa miasta: Lublin" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d79969.52869457439!2d22.493730697393076!3d51.21819562155181!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x472257141e154061%3A0x5528ee7af6e8e95f!2sLublin!5e0!3m2!1spl!2spl!4v1635675753081!5m2!1spl!2spl" style="border:0;" allowfullscreen="" loading="lazy" width="100%" height="480"></iframe>
 

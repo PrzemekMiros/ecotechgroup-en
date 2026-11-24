@@ -14,7 +14,7 @@ faq:
 description: "Rury stalowe zwijane z blachy o dużych średnicach, wykonywane zgodnie z parametrami konkretnego projektu."
 image: "/img/pipes/rury-stalowe-zwijane-z-blachy.webp"
 imageAlt: "Rury stalowe zwijane z blachy"
-source: "https://ecotechgroup.pl/rury-stalowe-zwijane-z-blachy/"
+source: "https://ecotechgroup.pl/steel-pipes-plate-rolled/"
 order: 6
 ---
 

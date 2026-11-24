@@ -3,7 +3,7 @@ title: "Skup rur stalowych"
 pubDate: 2021-04-21
 slug: "skup-rur-stalowych"
 description: "Eco-Tech od wielu lat prowadzi również skup rur stalowych . Chętnie nabędziemy każde wyroby tego typu, niezależnie od ich rodzaju oraz wymiarów. Sprzedaż rur w skupie rur stalowych to…"
-source: "https://ecotechgroup.pl/uslugi/skup-rur-stalowych/"
+source: "https://ecotechgroup.pl/services/skup-rur-stalowych/"
 order: 4
 image: "/img/posts/2022/12/eco-tech-skup-rur-compress.webp"
 imageAlt: "||"
@@ -19,7 +19,7 @@ imageAlt: "||"
 
 
 
-<p>Eco-Tech od wielu lat prowadzi również skup <strong><a href="/rury-stalowe/">rur stalowych</a></strong>. Chętnie nabędziemy każde wyroby tego typu, niezależnie od ich rodzaju oraz wymiarów. Sprzedaż rur w skupie rur stalowych to doskonały sposób na pozbycie się nadwyżek produkcyjnych albo magazynowych, a także na częściowy zwrot kosztów z likwidowanej instalacji.</p>
+<p>Eco-Tech od wielu lat prowadzi również skup <strong><a href="/steel-pipes/">rur stalowych</a></strong>. Chętnie nabędziemy każde wyroby tego typu, niezależnie od ich rodzaju oraz wymiarów. Sprzedaż rur w skupie rur stalowych to doskonały sposób na pozbycie się nadwyżek produkcyjnych albo magazynowych, a także na częściowy zwrot kosztów z likwidowanej instalacji.</p>
 
 
 

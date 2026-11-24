@@ -4,7 +4,7 @@ city: "Elbląg"
 slug: "rury-stalowe-elblag"
 pubDate: 2022-10-07
 description: "Dostawa rur stalowych do Elbląga i okolic."
-source: "https://ecotechgroup.pl/dostawa-rur-stalowych/rury-stalowe-elblag/"
+source: "https://ecotechgroup.pl/pipe-delivery/rury-stalowe-elblag/"
 order: 1
 ---
 
@@ -14,7 +14,7 @@ order: 1
 
 <h2 class="wp-block-heading">Nasza oferta dostawy rur stalowych dla Elbląga i okolic</h2>
 
-<p><strong><a href="/rury-stalowe/">Rury stalowe</a></strong> to elementy wykorzystywane w <strong>budownictwie, przemyśle, sieciach wodociągowych, ciepłowniczych, ciśnieniowych</strong> i do wielu innych celów. To, czy dany rodzaj rury sprawdzi się w określonym przypadku, zależy od wielu czynników. Decyduje o tym średnica i długość rury, grubość blachy, gatunek stali użyty do produkcji, a nawet sposób łączenia krawędzi. Doskonale o tym wiemy i właśnie dlatego dbamy o to, by w naszej ofercie znajdowały się wszystkie najpopularniejsze rodzaje rur stalowych. Tylko w ten sposób możemy w pełni odpowiedzieć na potrzeby naszych klientów, którzy potrzebują <strong>rur stalowych w Elblągu</strong>.</p>
+<p><strong><a href="/steel-pipes/">Rury stalowe</a></strong> to elementy wykorzystywane w <strong>budownictwie, przemyśle, sieciach wodociągowych, ciepłowniczych, ciśnieniowych</strong> i do wielu innych celów. To, czy dany rodzaj rury sprawdzi się w określonym przypadku, zależy od wielu czynników. Decyduje o tym średnica i długość rury, grubość blachy, gatunek stali użyty do produkcji, a nawet sposób łączenia krawędzi. Doskonale o tym wiemy i właśnie dlatego dbamy o to, by w naszej ofercie znajdowały się wszystkie najpopularniejsze rodzaje rur stalowych. Tylko w ten sposób możemy w pełni odpowiedzieć na potrzeby naszych klientów, którzy potrzebują <strong>rur stalowych w Elblągu</strong>.</p>
 
 <p>Znajdziesz u nas m.in. rury:</p>
 
@@ -40,7 +40,7 @@ order: 1
 
 <h2 class="wp-block-heading">Wyślij zapytanie</h2>
 
-<p><a href="/kontakt#formularz-kontaktowy">Przejdź do formularza kontaktowego</a></p>
+<p><a href="/contact/#formularz-kontaktowy">Przejdź do formularza kontaktowego</a></p>
 
 <p>Wysokiej jakości rury stalowe to podstawa udanej realizacji projektu – wybierz produkty z naszej oferty i zapewnij sobie sprawną realizację prac!</p>
 

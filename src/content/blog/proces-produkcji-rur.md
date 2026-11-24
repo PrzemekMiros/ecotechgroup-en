@@ -13,7 +13,7 @@ image: "/img/posts/2022/05/rury-stalowe-spawanie-compress.jpg"
 imageAlt: "rury-stalowe-spawanie"
 ---
 
-<p><strong><a href="/rury-stalowe/" data-type="link" data-id="/rury-stalowe/">Rury stalowe</a> </strong>to elementy o nieskomplikowanej konstrukcji. Może się wydawać, że ich produkcja jest równie prosta. W rzeczywistości jest jednak inaczej – <strong>proces produkcji rur </strong>wymaga użycia zaawansowanego sprzętu, a także doświadczenia i umiejętności. Jak wygląda produkcja rur w zależności od ich rodzaju?</p>
+<p><strong><a href="/steel-pipes/" data-type="link" data-id="/steel-pipes/">Rury stalowe</a> </strong>to elementy o nieskomplikowanej konstrukcji. Może się wydawać, że ich produkcja jest równie prosta. W rzeczywistości jest jednak inaczej – <strong>proces produkcji rur </strong>wymaga użycia zaawansowanego sprzętu, a także doświadczenia i umiejętności. Jak wygląda produkcja rur w zależności od ich rodzaju?</p>
 
 
 
@@ -26,15 +26,15 @@ imageAlt: "rury-stalowe-spawanie"
 
 
 <ul>
-<li><a href="/rury-stalowe-ze-szwem-wzdluznym/">rury ze szwem wzdłużnym</a>;</li>
+<li><a href="/steel-pipes-longitudinally-welded/">rury ze szwem wzdłużnym</a>;</li>
 
 
 
-<li><a href="/rury-stalowe-ze-szwem-spiralnym/">rury ze szwem spiralnym</a>;</li>
+<li><a href="/steel-pipes-spiral-welded/">rury ze szwem spiralnym</a>;</li>
 
 
 
-<li><a href="/rury-stalowe-bez-szwu/">rury bezszwowe</a>.</li>
+<li><a href="/steel-pipes-seamless/">rury bezszwowe</a>.</li>
 </ul>
 
 
@@ -59,7 +59,7 @@ imageAlt: "rury-stalowe-spawanie"
 
 
 
-<p><strong>Proces produkcji rur</strong> bez widocznego miejsca łączenia jest nieco bardziej skomplikowany. W przypadku <strong><a href="/rury-stalowe-bez-szwu/">rur bezszwowych</a></strong> wykorzystuje się metodę ukośnego walcowania. W stalowym materiale wykonuje się otwór. Tak przygotowany element umieszcza się pomiędzy dwoma walcami, z osiami ułożonymi pod określonym kątem. Aby nadać mu kształt rury, obraca się go i wciąga na specjalny trzpień.</p>
+<p><strong>Proces produkcji rur</strong> bez widocznego miejsca łączenia jest nieco bardziej skomplikowany. W przypadku <strong><a href="/steel-pipes-seamless/">rur bezszwowych</a></strong> wykorzystuje się metodę ukośnego walcowania. W stalowym materiale wykonuje się otwór. Tak przygotowany element umieszcza się pomiędzy dwoma walcami, z osiami ułożonymi pod określonym kątem. Aby nadać mu kształt rury, obraca się go i wciąga na specjalny trzpień.</p>
 
 
 

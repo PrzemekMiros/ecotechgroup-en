@@ -4,7 +4,7 @@ slug: "przedstawiciel-handlowy-b2b"
 pubDate: 2025-02-26
 location: "Warszawa"
 description: "Praca w sprzedaży B2B — w terenie i biurze — dla osoby z doświadczeniem w branży stalowej."
-source: "https://ecotechgroup.pl/praca/przedstawiciel-handlowy-b2b/"
+source: "https://ecotechgroup.pl/careers/przedstawiciel-handlowy-b2b/"
 order: 4
 ---
 

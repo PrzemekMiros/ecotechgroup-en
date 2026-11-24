@@ -4,7 +4,7 @@ city: "Siedlce"
 slug: "rury-stalowe-siedlce"
 pubDate: 2022-10-07
 description: "Dostawa rur stalowych do Siedlec i okolic."
-source: "https://ecotechgroup.pl/dostawa-rur-stalowych/rury-stalowe-siedlce/"
+source: "https://ecotechgroup.pl/pipe-delivery/rury-stalowe-siedlce/"
 order: 7
 ---
 
@@ -14,7 +14,7 @@ order: 7
 
 <h2 class="wp-block-heading">Jakie rodzaje rur stalowych znajdziesz w naszej ofercie?</h2>
 
-<p><strong><a href="/rury-stalowe/">Rury stalowe</a></strong>, które oferujemy naszym klientom, można podzielić pod względem zastosowań. Wyróżniamy rury:</p>
+<p><strong><a href="/steel-pipes/">Rury stalowe</a></strong>, które oferujemy naszym klientom, można podzielić pod względem zastosowań. Wyróżniamy rury:</p>
 
 <ul>
 <li>konstrukcyjne;</li>
@@ -44,7 +44,7 @@ order: 7
 
 <h2 class="wp-block-heading" id="wyslij-zapytanie">Wyślij zapytanie</h2>
 
-<p><a href="/kontakt#formularz-kontaktowy">Przejdź do formularza kontaktowego</a></p>
+<p><a href="/contact/#formularz-kontaktowy">Przejdź do formularza kontaktowego</a></p>
 
 <p><strong>Oszczędź swój czas i zapewnij bezproblemową realizację inwestycji – zamów rury stalowe do Siedlec!</strong></p>
 

@@ -4,7 +4,7 @@ city: "Opole"
 slug: "rury-stalowe-opole"
 pubDate: 2022-10-07
 description: "Dostawa rur stalowych do Opola i okolic."
-source: "https://ecotechgroup.pl/dostawa-rur-stalowych/rury-stalowe-opole/"
+source: "https://ecotechgroup.pl/pipe-delivery/rury-stalowe-opole/"
 order: 4
 ---
 
@@ -14,7 +14,7 @@ order: 4
 
 <h2 class="wp-block-heading">Rury stalowe do celów konstrukcyjnych, przewodowe i inne – poznaj naszą ofertę</h2>
 
-<p>Odpowiednio dobrany rodzaj <strong><a href="/rury-stalowe/">rur stalowych</a></strong> to klucz do sukcesu, jeśli chodzi o prace budowlane, remontowe, konstrukcyjne czy modernizacyjne. Tylko w ten sposób jesteś w stanie zapewnić bezpieczeństwo: stabilność konstrukcji czy szczelność instalacji. Doskonale zdajemy sobie z tego sprawę i dlatego oferujemy naszym klientom szeroki wybór rur stalowych, różniących się zastosowaniami i budową.</p>
+<p>Odpowiednio dobrany rodzaj <strong><a href="/steel-pipes/">rur stalowych</a></strong> to klucz do sukcesu, jeśli chodzi o prace budowlane, remontowe, konstrukcyjne czy modernizacyjne. Tylko w ten sposób jesteś w stanie zapewnić bezpieczeństwo: stabilność konstrukcji czy szczelność instalacji. Doskonale zdajemy sobie z tego sprawę i dlatego oferujemy naszym klientom szeroki wybór rur stalowych, różniących się zastosowaniami i budową.</p>
 
 <p>W naszej ofercie znajdziesz m.in. rury:</p>
 
@@ -40,7 +40,7 @@ order: 4
 
 <h2 class="wp-block-heading">Wyślij zapytanie</h2>
 
-<p><a href="/kontakt#formularz-kontaktowy">Przejdź do formularza kontaktowego</a></p>
+<p><a href="/contact/#formularz-kontaktowy">Przejdź do formularza kontaktowego</a></p>
 
 <p>Gwarantujemy <strong>szybkie dostarczenie rur stalowych do Opola</strong>. Zapewniamy także <strong>przejrzyste warunki współpracy</strong> – już na wstępie określimy termin dostawy. Dzięki temu będziesz mógł lepiej zaplanować pracę swojego zespołu lub podwykonawców.</p>
 

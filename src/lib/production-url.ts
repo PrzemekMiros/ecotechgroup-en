@@ -1,1 +1,3 @@
-export const productionUrl = (slug: string) => `/produkty/${slug}/`;
+import { englishSlug } from './urls';
+
+export const productionUrl = (slug: string) => `/manufacturing/${englishSlug(slug)}/`;

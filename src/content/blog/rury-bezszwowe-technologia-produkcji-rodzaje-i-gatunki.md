@@ -65,4 +65,4 @@ imageAlt: "rodzaje"
 
 
 
-<p>Jeśli planują Państwo zakup rur bezszwowych, zachęcamy do przejrzenia naszej oferty. Posiadamy szeroki asortyment <a href="/rury-stalowe-bez-szwu/">rur bez szwu</a>, wśród których z pewnością znajdziecie Państwo wyroby pasujące do wymagań projektowych. W razie jakichkolwiek pytań lub potrzeby porady zapraszamy do kontaktu z działem sprzedaży <a href="/kontakt/">EcoTech Group.</a></p>
+<p>Jeśli planują Państwo zakup rur bezszwowych, zachęcamy do przejrzenia naszej oferty. Posiadamy szeroki asortyment <a href="/steel-pipes-seamless/">rur bez szwu</a>, wśród których z pewnością znajdziecie Państwo wyroby pasujące do wymagań projektowych. W razie jakichkolwiek pytań lub potrzeby porady zapraszamy do kontaktu z działem sprzedaży <a href="/contact/">EcoTech Group.</a></p>

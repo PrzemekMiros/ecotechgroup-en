@@ -33,7 +33,7 @@ imageAlt: "hydrostation-rhodopi-mountains-bulgaria"
 
 
 
-<p>W budownictwie inżynieryjnym i hydro inżynieryjnym czasem buduje się tzw. ściany szczelinowe. Ich zadaniem jest przenoszenie obciążeń. Ściany szczelinowe mogą pełnić rolę fundamentów głębokich, barier wodnych w zaporach albo ścian oporowych głębokich wykopów. Poszczególne sekcje ścianek szczelinowych rozdzielone są najczęściej rurami stalowymi. Mogą być to zarówno <a href="/rury-stalowe-ze-szwem-wzdluznym/"><strong>rury ze szwem</strong></a>, jak i <a href="/rury-stalowe-bez-szwu/"><strong>rury bezszwowe</strong></a> czy <a href="/rury-stalowe/rury-stalowe-konstrukcyjne/"><strong>konstrukcyjne</strong></a>, o różnych średnicach.</p>
+<p>W budownictwie inżynieryjnym i hydro inżynieryjnym czasem buduje się tzw. ściany szczelinowe. Ich zadaniem jest przenoszenie obciążeń. Ściany szczelinowe mogą pełnić rolę fundamentów głębokich, barier wodnych w zaporach albo ścian oporowych głębokich wykopów. Poszczególne sekcje ścianek szczelinowych rozdzielone są najczęściej rurami stalowymi. Mogą być to zarówno <a href="/steel-pipes-longitudinally-welded/"><strong>rury ze szwem</strong></a>, jak i <a href="/steel-pipes-seamless/"><strong>rury bezszwowe</strong></a> czy <a href="/steel-pipes/rury-stalowe-konstrukcyjne/"><strong>konstrukcyjne</strong></a>, o różnych średnicach.</p>
 
 
 

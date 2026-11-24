@@ -4,7 +4,7 @@ city: "Bydgoszcz"
 slug: "rury-stalowe-bydgoszcz"
 pubDate: 2021-04-29
 description: "Dostawa rur stalowych do Bydgoszczy i okolic."
-source: "https://ecotechgroup.pl/dostawa-rur-stalowych/rury-stalowe-bydgoszcz/"
+source: "https://ecotechgroup.pl/pipe-delivery/rury-stalowe-bydgoszcz/"
 order: 18
 ---
 
@@ -40,11 +40,11 @@ order: 18
 
 <h2 class="wp-block-heading" id="bogata-oferta-rur-stalowych-dla-miasta-bydgoszcz">Bogata oferta rur stalowych dla miasta Bydgoszcz</h2>
 
-<p>Większość produktów to rury bez szwu, gazowe, spawane i grubościenne. Wszystkie nasze produkty są certyfikowane, sprowadzane i produkowane w głównych fabrykach w UE i Polsce. Oprócz szerokiej oferty <strong><a href="/rury-stalowe/">rur stalowych</a></strong> oferujemy różne usługi na terenie miasta Bydgoszcz, takie jak:</p>
+<p>Większość produktów to rury bez szwu, gazowe, spawane i grubościenne. Wszystkie nasze produkty są certyfikowane, sprowadzane i produkowane w głównych fabrykach w UE i Polsce. Oprócz szerokiej oferty <strong><a href="/steel-pipes/">rur stalowych</a></strong> oferujemy różne usługi na terenie miasta Bydgoszcz, takie jak:</p>
 
 <h2 class="wp-block-heading" id="wyslij-zapytanie">Wyślij zapytanie</h2>
 
-<p><a href="/kontakt#formularz-kontaktowy">Przejdź do formularza kontaktowego</a></p>
+<p><a href="/contact/#formularz-kontaktowy">Przejdź do formularza kontaktowego</a></p>
 
 <p>Sprawdź naszą ofertę dla miasta <strong>Bydgoszcz! Eco Tech Group Sp. z o.o.</strong> nie tylko zajmuje się sprzedażą rur stalowych, ale także pomaga w ich doborze, wykonuje elementy na zamówienie, a także dostarcza rury bezpośrednio do klienta.</p>
 

@@ -4,7 +4,7 @@ slug: "magazynier-glowaczow"
 pubDate: 2025-08-06
 location: "Głowaczów"
 description: "Oferta pracy dla magazyniera w Głowaczowie."
-source: "https://ecotechgroup.pl/praca/magazynier-glowaczow/"
+source: "https://ecotechgroup.pl/careers/magazynier-glowaczow/"
 order: 1
 ---
 

@@ -4,7 +4,7 @@ city: "Kraków"
 slug: "rury-stalowe-krakow"
 pubDate: 2021-04-30
 description: "Dostawa rur stalowych do Krakowa i okolic."
-source: "https://ecotechgroup.pl/dostawa-rur-stalowych/rury-stalowe-krakow/"
+source: "https://ecotechgroup.pl/pipe-delivery/rury-stalowe-krakow/"
 order: 15
 ---
 
@@ -16,7 +16,7 @@ order: 15
 
 <h2 class="wp-block-heading" id="krakow-rury-potrzebne-do-licznych-inwestycji">Kraków<span class="thin-text"> – rury potrzebne do licznych inwestycji</span></h2>
 
-<p>Jeśli chodzi o Kraków, <strong><a href="/rury-stalowe/">rury stalowe</a></strong> znajdują w nim wielu nabywców. Wszystko przez to, że jako stolica Małopolski, Kraków należy do grona miast, w których realizowanych jest najwięcej inwestycji. Wielu spośród naszych Klientów zakupuje rury w związku z projektami budowlanymi lub instalacyjnymi, ale wyroby te przydatne bywają również w branży energetycznej, chemicznej, wydobywczej, a nawet motoryzacyjnej.</p>
+<p>Jeśli chodzi o Kraków, <strong><a href="/steel-pipes/">rury stalowe</a></strong> znajdują w nim wielu nabywców. Wszystko przez to, że jako stolica Małopolski, Kraków należy do grona miast, w których realizowanych jest najwięcej inwestycji. Wielu spośród naszych Klientów zakupuje rury w związku z projektami budowlanymi lub instalacyjnymi, ale wyroby te przydatne bywają również w branży energetycznej, chemicznej, wydobywczej, a nawet motoryzacyjnej.</p>
 
 <p>Niezależnie od tego, do czego potrzebujesz rur stalowych, możesz być pewien, że u nas znajdziesz odpowiednie wyroby, a co najważniejsze – wyroby wysokojakościowe. Do naszej oferty trafiają jedynie rury posiadające atesty i certyfikaty. Wszystkie cechują się wybitną trwałością, odpornością na obciążenia oraz dopracowaniem najdrobniejszych szczegółów. To wyroby przygotowane do wieloletniej, wymagającej eksploatacji.</p>
 
@@ -28,7 +28,7 @@ order: 15
 
 <h2 class="wp-block-heading" id="wyslij-zapytanie">Wyslij zapytanie</h2>
 
-<p><a href="/kontakt#formularz-kontaktowy">Przejdź do formularza kontaktowego</a></p>
+<p><a href="/contact/#formularz-kontaktowy">Przejdź do formularza kontaktowego</a></p>
 
 <p><strong>Spółka Eco-Tech od ponad 10 lat jest znanym i cenionym dostawcą rur stalowych. Kraków należy do miast, w których wiele z naszych Klientów realizuje projekty z ich wykorzystaniem. Będzie nam miło, jeśli staniesz się jednym z nich!</strong></p>
 

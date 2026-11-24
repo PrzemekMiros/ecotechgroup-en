@@ -4,13 +4,13 @@ city: "Rzeszów"
 slug: "rury-stalowe-rzeszow"
 pubDate: 2021-10-31
 description: "Dostawa rur stalowych do Rzeszowa i okolic."
-source: "https://ecotechgroup.pl/dostawa-rur-stalowych/rury-stalowe-rzeszow/"
+source: "https://ecotechgroup.pl/pipe-delivery/rury-stalowe-rzeszow/"
 order: 10
 ---
 
 <h2 class="wp-block-heading" id="zaopatrujemy-w-rury-stalowe-rzeszow-i-okolice-sprawdz-nasza-oferte"><span class="thin-text">Zaopatrujemy w rury stalowe Rzeszów i okolice.</span> Sprawdź naszą ofertę!</h2>
 
-<p>Szukasz sprawdzonego dostawcy <strong><a href="/rury-stalowe/">rur stalowych </a></strong>w Rzeszowie? Oszczędź czas i zamów potrzebne materiały przez internet! Nasza hurtownia rur to miejsce, w którym znajdziesz wybrane rodzaje rur dostępne od ręki. Sprawdź, jak dbamy o ich jakość i szybką dostawę do naszych klientów!</p>
+<p>Szukasz sprawdzonego dostawcy <strong><a href="/steel-pipes/">rur stalowych </a></strong>w Rzeszowie? Oszczędź czas i zamów potrzebne materiały przez internet! Nasza hurtownia rur to miejsce, w którym znajdziesz wybrane rodzaje rur dostępne od ręki. Sprawdź, jak dbamy o ich jakość i szybką dostawę do naszych klientów!</p>
 
 <h2 class="wp-block-heading" id="stala-kontrola-jakosci-i-najlepsi-producenci-rur-dla-rzeszowa"><span class="thin-text">Stała kontrola jakości</span> i najlepsi producenci rur dla Rzeszowa</h2>
 
@@ -26,7 +26,7 @@ order: 10
 
 <h2 class="wp-block-heading" id="wyslij-zapytanie">Wyślij zapytanie</h2>
 
-<p><a href="/kontakt#formularz-kontaktowy">Przejdź do formularza kontaktowego</a></p>
+<p><a href="/contact/#formularz-kontaktowy">Przejdź do formularza kontaktowego</a></p>
 
 <p>Chcesz znaleźć produkt dla siebie? Sprawdź ofertę lub skontaktuj się z nami, aby uzyskać pomoc!</p>
 

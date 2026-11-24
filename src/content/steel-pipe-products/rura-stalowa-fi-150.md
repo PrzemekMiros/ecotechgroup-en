@@ -21,4 +21,4 @@ order: 476
 
 Posiadamy flotę pojazdów przeznaczonych do transportu rur stalowych, dzięki czemu dostawa jest zawsze na czas.
 
-Zapewniamy <a href="/dostawa-rur-stalowych/">dostawę</a> w kraju i na terenie Unii Europejskiej.
+Zapewniamy <a href="/pipe-delivery/">dostawę</a> w kraju i na terenie Unii Europejskiej.

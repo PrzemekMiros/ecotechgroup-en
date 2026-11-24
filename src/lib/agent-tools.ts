@@ -31,7 +31,7 @@ export const agentTools: AgentTool[] = [
         phone: '+48 508 299 077',
         address: 'ul. Mieczysława Pożaryskiego 32, 04-703 Warszawa, Polska',
         hours: 'poniedziałek–piątek, 8:00–16:00 Europe/Warsaw',
-        contactUrl: 'https://ecotechgroup.pl/kontakt/'
+        contactUrl: 'https://ecotechgroup.pl/contact/'
       };
     }
   },
@@ -70,7 +70,7 @@ export const agentTools: AgentTool[] = [
         totalKg: Number(totalKg.toFixed(2)),
         densityKgM3: 7850,
         approximate: true,
-        calculatorUrl: 'https://ecotechgroup.pl/kalkulator-wagi-rur-stalowych/'
+        calculatorUrl: 'https://ecotechgroup.pl/steel-pipe-weight-calculator/'
       };
     }
   }

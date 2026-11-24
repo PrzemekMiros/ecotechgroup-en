@@ -16,7 +16,7 @@ export const onRequest = defineMiddleware(async (context, next) => {
   if (maintenanceMode && !context.isPrerendered) return maintenanceResponse();
 
   if (/^\/uslugi\/(?:ciecie-plazmowe-cnc-wypalanie-blach-cnc|demontaz-rurociagow-stalowych)\/?$/.test(url.pathname)) {
-    return context.redirect('https://ecotechgroup.pl/uslugi/', 301);
+    return context.redirect('https://ecotechgroup.pl/services/', 301);
   }
 
   const response = await next();

@@ -14,7 +14,7 @@ faq:
 description: "Rury stalowe ze szwem wzdłużnym do zastosowań konstrukcyjnych i instalacyjnych."
 image: "/img/posts/2022/06/ecotech-group-rury-stalowe-ze-szwem-wzdluznym_1.jpg"
 imageAlt: "Rury stalowe ze szwem wzdłużnym"
-source: "https://ecotechgroup.pl/rury-stalowe-ze-szwem-wzdluznym/"
+source: "https://ecotechgroup.pl/steel-pipes-longitudinally-welded/"
 order: 1
 ---
 

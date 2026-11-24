@@ -1,28 +1,28 @@
 ---
 import { getCollection } from "astro:content";
-import { productionUrl } from "../lib/production-url";
+import { urls } from "../lib/urls";
 import darkLogo from "../assets/img/logo/EcoTech_Logo_dark.png";
 import NavigationLink from "./NavigationLink.astro";
 
 const links = [
   {
-    href: "/rury-stalowe/",
+    href: urls.steelPipes,
     label: "Steel pipes",
     dropdown: true,
     menu: "pipes",
   },
-  { href: "/uslugi/", label: "Services", dropdown: true, menu: "services" },
+  { href: urls.services, label: "Services", dropdown: true, menu: "services" },
   {
-    href: "/produkcja/",
+    href: urls.manufacturing,
     label: "Manufacturing",
     dropdown: true,
     menu: "production",
   },
-  { href: "/aktualnosci/", label: "News", dropdown: false },
-  { href: "/do-pobrania/", label: "Downloads", dropdown: false },
-  { href: "/praca/", label: "Careers", dropdown: false },
-  { href: "/o-nas/", label: "About us", dropdown: false },
-  { href: "/kontakt/", label: "Contact", dropdown: false },
+  { href: urls.news, label: "News", dropdown: false },
+  { href: urls.downloads, label: "Downloads", dropdown: false },
+  { href: urls.careers, label: "Careers", dropdown: false },
+  { href: urls.about, label: "About us", dropdown: false },
+  { href: urls.contact, label: "Contact", dropdown: false },
 ] as const;
 const pathname = `${Astro.url.pathname.replace(/\/$/, "")}/`;
 const services = (await getCollection("services")).sort(
@@ -40,10 +40,10 @@ const itemHref = (
   slug: string,
 ) =>
   menu === "pipes"
-    ? `/rury-stalowe-${slug}/`
+    ? urls.category(slug)
     : menu === "production"
-      ? productionUrl(slug)
-      : `${baseHref.replace(/\/$/, "")}/${slug}/`;
+      ? urls.production(slug)
+      : urls.service(slug);
 const items = (menu: "pipes" | "services" | "production") =>
   menu === "pipes"
     ? pipeCategories
@@ -104,7 +104,7 @@ const allLabel = (menu: "pipes" | "services" | "production") =>
           sales@ecotechgroup.pl
         </a>
         <a
-          href="/kontakt/"
+          href={urls.contact}
           class="bg-accent-1 px-9 py-3 text-sm font-semibold tracking-[0.02em] transition-colors hover:bg-accent-1/85"
         >
           Send an enquiry
@@ -226,7 +226,7 @@ const allLabel = (menu: "pipes" | "services" | "production") =>
           </div>
           <div class="mt-6 grid gap-3 sm:grid-cols-2">
             <a
-              href="/kontakt/"
+              href={urls.contact}
               class="bg-accent-1 px-5 py-4 text-center text-sm font-semibold text-white hover:bg-accent-1/85"
             >
               Send an enquiry

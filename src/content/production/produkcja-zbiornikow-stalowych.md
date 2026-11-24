@@ -75,7 +75,7 @@ imageAlt: "|||||"
 
 
 
-<a href="/kontakt" class="et-button btn-black" title="Kontakt">Kontakt</a>
+<a href="/contact/" class="et-button btn-black" title="Contact">Contact</a>
 </div>
 
 

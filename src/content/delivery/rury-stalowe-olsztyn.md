@@ -4,7 +4,7 @@ city: "Olsztyn"
 slug: "rury-stalowe-olsztyn"
 pubDate: 2022-10-07
 description: "Dostawa rur stalowych do Olsztyna i okolic."
-source: "https://ecotechgroup.pl/dostawa-rur-stalowych/rury-stalowe-olsztyn/"
+source: "https://ecotechgroup.pl/pipe-delivery/rury-stalowe-olsztyn/"
 order: 3
 ---
 
@@ -26,7 +26,7 @@ order: 3
 
 <p>Chętnie jednak zrealizujemy zlecenia od wszystkich, którzy potrzebują <strong>dostawy rur stalowych do Olsztyna</strong>.</p>
 
-<p>W naszej ofercie znajdziesz <strong><a href="/rury-stalowe/">rury stalowe</a></strong> o różnych zastosowaniach: przewodowe, konstrukcyjne, kotłowe, ciśnieniowe czy grubościenne. Poszczególne produkty różnią się od siebie wymiarami, gatunkiem stali użytym do ich produkcji czy rodzajem izolacji. To wszystko pozwala nam precyzyjnie odpowiedzieć na potrzeby klientów, także te nietypowe.</p>
+<p>W naszej ofercie znajdziesz <strong><a href="/steel-pipes/">rury stalowe</a></strong> o różnych zastosowaniach: przewodowe, konstrukcyjne, kotłowe, ciśnieniowe czy grubościenne. Poszczególne produkty różnią się od siebie wymiarami, gatunkiem stali użytym do ich produkcji czy rodzajem izolacji. To wszystko pozwala nam precyzyjnie odpowiedzieć na potrzeby klientów, także te nietypowe.</p>
 
 <h2 class="wp-block-heading">Potrzebujesz szybkiej dostawy rur stalowych do Olsztyna? Skontaktuj się z nami!</h2>
 
@@ -38,7 +38,7 @@ order: 3
 
 <h2 class="wp-block-heading">Wyślij zapytanie</h2>
 
-<p><a href="/kontakt#formularz-kontaktowy">Przejdź do formularza kontaktowego</a></p>
+<p><a href="/contact/#formularz-kontaktowy">Przejdź do formularza kontaktowego</a></p>
 
 <p>Jeśli jednak nie masz pewności co do tego, <strong>jakich rur stalowych potrzebujesz</strong>, pozostaw to nam. Przyjrzymy się sytuacji i doradzimy Ci odpowiedni produkt.</p>
 

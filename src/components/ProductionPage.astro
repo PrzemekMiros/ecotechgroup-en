@@ -1,5 +1,5 @@
 ---
-import type { CollectionEntry } from "astro:content";
+import { render, type CollectionEntry } from "astro:content";
 import BaseLayout from "../layouts/BaseLayout.astro";
 import PageHero from "./PageHero.astro";
 import { serviceSchema } from "../lib/structured-data";
@@ -7,134 +7,167 @@ interface Props {
   item: CollectionEntry<"production">;
 }
 const { item } = Astro.props;
-const content: Record<
-  string,
-  { title: string; intro: string; details: string[] }
-> = {
-  "pale-rurowe": {
-    title: "Steel pipe piles",
-    intro: "Steel pipe piles for foundation and civil-engineering projects.",
-    details: [
-      "We supply and fabricate pipe piles to match the required diameter, wall thickness, steel grade and installation method.",
-      "Contact us with your project documentation for a tailored quotation.",
-    ],
-  },
-  "kolnierze-rurowe": {
-    title: "Pipe flanges",
-    intro:
-      "Steel pipe flanges manufactured for secure, durable pipeline connections.",
-    details: [
-      "We select dimensions, material and execution to suit the operating conditions and applicable standard.",
-      "Send your drawing or specification for a technical and commercial proposal.",
-    ],
-  },
-  "paloscianki-rurowe-combiwall": {
-    title: "Combiwall pipe sheet piles",
-    intro:
-      "Combined pipe-sheet-pile wall systems for retaining and waterfront structures.",
-    details: [
-      "The system is configured for the required loads, ground conditions and construction method.",
-      "We support material supply and fabrication for the project scope.",
-    ],
-  },
-  "produkcja-i-walcowanie-blach": {
-    title: "Plate fabrication and rolling",
-    intro:
-      "Steel plate rolling and fabrication for pipes, shells and structural components.",
-    details: [
-      "We process material to the required geometry and technical documentation.",
-      "Provide dimensions, material grade and quantity for a tailored offer.",
-    ],
-  },
-  "produkcja-kolan-segmentowych": {
-    title: "Segment bends",
-    intro: "Segment bends fabricated for steel pipeline systems.",
-    details: [
-      "The bend geometry, material and wall thickness are selected for the pipeline design.",
-      "We manufacture to the supplied drawing or agreed technical specification.",
-    ],
-  },
-  "produkcja-kominow-stalowych-przemyslowych": {
-    title: "Industrial steel chimneys",
-    intro:
-      "Fabrication of steel chimneys and exhaust-system components for industrial applications.",
-    details: [
-      "We match the design to operating conditions, dimensions and installation requirements.",
-      "Contact us to discuss your project and receive a quotation.",
-    ],
-  },
-  "produkcja-ploz-dystansowych": {
-    title: "Spacer skids",
-    intro: "Spacer skids for safe positioning of pipelines inside casings.",
-    details: [
-      "The design is selected for the pipe dimensions, casing and installation method.",
-      "We prepare the required quantity and configuration for your project.",
-    ],
-  },
-  "produkcja-podpor-mostowych": {
-    title: "Bridge bearings",
-    intro:
-      "Steel bridge-support components manufactured for infrastructure projects.",
-    details: [
-      "Fabrication is based on project documentation and structural requirements.",
-      "We agree the material, dimensions and quality-control scope before production.",
-    ],
-  },
-  "produkcja-zbiornikow-stalowych": {
-    title: "Steel tanks",
-    intro: "Steel tanks and process vessels for industrial applications.",
-    details: [
-      "We fabricate tanks to the required capacity, material grade and operating conditions.",
-      "Send your specification to receive a technical and commercial offer.",
-    ],
-  },
-  "rozpory-rurowe-systemowe": {
-    title: "System pipe struts",
-    intro: "System pipe struts for temporary support and excavation works.",
-    details: [
-      "We select the components for the expected loads and project geometry.",
-      "Contact our team to discuss the required configuration.",
-    ],
-  },
-};
-const page = content[item.data.slug] || {
-  title: item.data.title,
-  intro: "Steel fabrication for industrial and infrastructure projects.",
-  details: [
-    "We prepare the scope according to your technical requirements.",
-    "Contact us for availability, schedule and pricing.",
-  ],
-};
+const { Content } = await render(item);
 ---
 
 <BaseLayout
-  breadcrumbs={[{ name: "Manufacturing", path: "/produkcja/" }]}
-  title={`${page.title} | Eco Tech Group`}
-  description={page.intro}
+  breadcrumbs={[{ name: "Manufacturing", path: "/manufacturing/" }]}
+  title={`${item.data.title} | Eco Tech Group`}
+  description={item.data.description}
   image={item.data.image}
-  imageAlt={page.title}
-  structuredData={[serviceSchema(page.title, page.intro, Astro.url.pathname)]}
+  imageAlt={item.data.imageAlt}
+  structuredData={[
+    serviceSchema(item.data.title, item.data.description, Astro.url.pathname),
+  ]}
 >
   <article class="production-page">
     <PageHero
-      title={page.title}
-      breadcrumbs={[{ label: "Manufacturing", href: "/produkcja/" }]}
+      title={item.data.title}
+      breadcrumbs={[{ label: "Manufacturing", href: "/manufacturing/" }]}
       image={item.data.image}
-      imageAlt={page.title}
+      imageAlt={item.data.imageAlt ?? item.data.title}
     />
     <section class="mx-auto max-w-7xl px-5 py-16 md:px-8 lg:py-24">
-      <div class="max-w-4xl text-base leading-7 text-ink/75">
-        <p class="text-xl leading-8 text-ink md:text-2xl">{page.intro}</p>
-        {page.details.map((detail) => (
-          <p class="mt-6">{detail}</p>
-        ))}
-        <a
-          href="/kontakt/"
-          class="mt-10 inline-flex bg-accent-1 px-7 py-4 text-sm font-semibold text-white hover:bg-accent-1/85"
-        >
-          Request a quotation
-        </a>
+      <div class="production-content max-w-7xl">
+        <Content />
       </div>
     </section>
   </article>
 </BaseLayout>
+
+<style>
+  .production-content {
+    color: #586d85;
+  }
+  .production-content :global(p),
+  .production-content :global(li) {
+    font-size: clamp(0.9375rem, 0.91rem + 0.15vw, 1rem);
+    line-height: 1.7;
+  }
+  .production-content :global(p + p) {
+    margin-top: 1.25rem;
+  }
+  .production-content :global(a) {
+    color: var(--color-accent-1);
+    font-weight: 600;
+    text-decoration: underline;
+    text-underline-offset: 0.16em;
+  }
+  .production-content :global(a:hover) {
+    color: var(--color-ink);
+  }
+  .production-content :global(strong) {
+    color: #142b3a;
+    font-weight: 600;
+  }
+  .production-content :global(h2) {
+    margin-top: 3.25rem;
+    color: #142b3a;
+    font-size: clamp(1.7rem, 1.45rem + 1vw, 2rem);
+    font-weight: 600;
+    line-height: 1.18;
+    letter-spacing: -0.035em;
+  }
+  .production-content :global(h3) {
+    margin-top: 2.25rem;
+    color: #142b3a;
+    font-size: clamp(1.25rem, 1.12rem + 0.6vw, 1.5rem);
+    font-weight: 600;
+    line-height: 1.3;
+    letter-spacing: -0.025em;
+  }
+  .production-content :global(h4) {
+    margin-top: 1.75rem;
+    color: #142b3a;
+    font-weight: 600;
+  }
+  .production-content :global(.thin-text) {
+    font-weight: 400;
+  }
+  .production-content :global(ul) {
+    margin-top: 1.5rem;
+    list-style: circle;
+    padding-left: 1.25rem;
+  }
+  .production-content :global(li + li) {
+    margin-top: 0.45rem;
+  }
+  .production-content :global(hr) {
+    margin: 1.5rem 0;
+    border: 0;
+    border-top: 1px solid rgb(20 43 58 / 14%);
+  }
+  .production-content :global(.et-line-yellow) {
+    width: 4rem;
+    border-color: var(--color-sun);
+    border-top-width: 2px;
+  }
+  .production-content :global(.wp-block-columns) {
+    display: grid;
+    gap: 1.5rem;
+    margin: 2.5rem 0;
+  }
+  .production-content :global(.wp-block-column) {
+    min-width: 0;
+  }
+  .production-content :global(figure) {
+    margin: 2rem 0;
+    overflow: hidden;
+  }
+  .production-content :global(figure a) {
+    display: block;
+    height: 100%;
+  }
+  .production-content :global(figure img) {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .production-content :global(.wp-block-columns figure) {
+    margin: 0;
+    aspect-ratio: 16 / 9;
+  }
+  .production-content :global(.wp-block-gallery) {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+  }
+  .production-content :global(.wp-block-gallery > figure) {
+    margin: 0;
+    aspect-ratio: 16 / 9;
+  }
+  .production-content :global(table) {
+    margin-top: 1.75rem;
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.95rem;
+  }
+  .production-content :global(th),
+  .production-content :global(td) {
+    border: 1px solid rgb(20 43 58 / 16%);
+    padding: 0.85rem;
+    text-align: left;
+    vertical-align: top;
+  }
+  .production-content :global(th) {
+    background: #edf3eb;
+    color: #142b3a;
+    font-weight: 600;
+  }
+  @media (min-width: 48rem) {
+    .production-content :global(.wp-block-columns) {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+  @media (max-width: 47.99rem) {
+    .production-content
+      :global(.wp-block-columns.reverse-mob > .wp-block-column:first-child) {
+      order: 2;
+    }
+    .production-content
+      :global(.wp-block-columns.reverse-mob > .wp-block-column:nth-child(2)) {
+      order: 1;
+    }
+  }
+</style>

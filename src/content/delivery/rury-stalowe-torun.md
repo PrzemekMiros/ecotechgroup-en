@@ -4,7 +4,7 @@ city: "Toruń"
 slug: "rury-stalowe-torun"
 pubDate: 2021-10-31
 description: "Dostawa rur stalowych do Torunia i okolic."
-source: "https://ecotechgroup.pl/dostawa-rur-stalowych/rury-stalowe-torun/"
+source: "https://ecotechgroup.pl/pipe-delivery/rury-stalowe-torun/"
 order: 9
 ---
 
@@ -14,7 +14,7 @@ order: 9
 
 <h2 class="wp-block-heading" id="dostarczamy-rury-stalowe-do-torunia-i-okolic"><span class="thin-text">Dostarczamy rury stalowe</span> do Torunia i okolic</h2>
 
-<p>Nie musisz już szukać <strong>hurtowni rur w Toruniu</strong>, aby szybko zaopatrzyć swoją inwestycję w potrzebne materiały. W Eco-Tech Group znajdziesz najpopularniejsze rodzaje <strong><a href="/rury-stalowe/">rur stalowych</a></strong>: bezszwowe, ze szwami wzdłużnymi lub spiralnymi, rury w izolacji, zwijane z blachy, dwudzielne. </p>
+<p>Nie musisz już szukać <strong>hurtowni rur w Toruniu</strong>, aby szybko zaopatrzyć swoją inwestycję w potrzebne materiały. W Eco-Tech Group znajdziesz najpopularniejsze rodzaje <strong><a href="/steel-pipes/">rur stalowych</a></strong>: bezszwowe, ze szwami wzdłużnymi lub spiralnymi, rury w izolacji, zwijane z blachy, dwudzielne. </p>
 
 <p>Każdy z nich oferujemy w kilku wersjach, różniących się od siebie długością i średnicą. Jednym z naszych atutów jest <strong>duży magazyn</strong>, w którym przechowujemy tysiące produktów – możemy je dostarczyć od razu.</p>
 
@@ -30,7 +30,7 @@ order: 9
 
 <h2 class="wp-block-heading" id="wyslij-zapytanie">Wyślij zapytanie</h2>
 
-<p><a href="/kontakt#formularz-kontaktowy">Przejdź do formularza kontaktowego</a></p>
+<p><a href="/contact/#formularz-kontaktowy">Przejdź do formularza kontaktowego</a></p>
 
 <p>Chcesz wybrać rozwiązanie, które idealnie sprawdzi się w Twoim przypadku? Sprawdź naszą ofertę lub skontaktuj się z nami, abyśmy mogli Ci pomóc w wyborze!</p>
 

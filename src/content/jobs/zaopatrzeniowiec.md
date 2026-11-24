@@ -4,7 +4,7 @@ slug: "zaopatrzeniowiec"
 pubDate: 2025-06-18
 location: "Warszawa"
 description: "Oferta pracy dla doświadczonego zaopatrzeniowca w Warszawie."
-source: "https://ecotechgroup.pl/praca/zaopatrzeniowiec/"
+source: "https://ecotechgroup.pl/careers/zaopatrzeniowiec/"
 order: 7
 ---
 

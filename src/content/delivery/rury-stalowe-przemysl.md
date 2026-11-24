@@ -4,13 +4,13 @@ city: "Przemyśl"
 slug: "rury-stalowe-przemysl"
 pubDate: 2022-10-07
 description: "Dostawa rur stalowych do Przemyśla i okolic."
-source: "https://ecotechgroup.pl/dostawa-rur-stalowych/rury-stalowe-przemysl/"
+source: "https://ecotechgroup.pl/pipe-delivery/rury-stalowe-przemysl/"
 order: 6
 ---
 
 <h2 class="wp-block-heading">Rury stalowe w Przemyślu – poznaj naszą ofertę dla klientów biznesowych</h2>
 
-<p><strong><a href="/rury-stalowe/">Rury stalowe</a> </strong>to elementy, od których jakości zależy powodzenie wielu projektów: inwestycji budowlanych, modernizacji sieci i innych. Chcesz mieć pewność, że kupujesz produkty od godnych zaufania producentów? My wiemy, jak zadbać o jakość – starannie weryfikujemy stan i parametry techniczne każdej rury w naszej ofercie. Dzięki temu wiesz, że zamawiając <strong>rury stalowe do Przemyśla</strong>, otrzymujesz dokładnie to, czego potrzebujesz.</p>
+<p><strong><a href="/steel-pipes/">Rury stalowe</a> </strong>to elementy, od których jakości zależy powodzenie wielu projektów: inwestycji budowlanych, modernizacji sieci i innych. Chcesz mieć pewność, że kupujesz produkty od godnych zaufania producentów? My wiemy, jak zadbać o jakość – starannie weryfikujemy stan i parametry techniczne każdej rury w naszej ofercie. Dzięki temu wiesz, że zamawiając <strong>rury stalowe do Przemyśla</strong>, otrzymujesz dokładnie to, czego potrzebujesz.</p>
 
 <h2 class="wp-block-heading">Nasza oferta rur stalowych dla Przemyśla</h2>
 
@@ -28,7 +28,7 @@ order: 6
 
 <h2 class="wp-block-heading">Wyślij zapytanie</h2>
 
-<p><a href="/kontakt#formularz-kontaktowy">Przejdź do formularza kontaktowego</a></p>
+<p><a href="/contact/#formularz-kontaktowy">Przejdź do formularza kontaktowego</a></p>
 
 <p>Jesteśmy gotowi, by pomagać naszym klientom na każdym etapie. Jeśli nie wiesz, który z produktów z naszej oferty będzie dla Ciebie najlepszy lub szukasz alternatywy dla stosowanych dotychczas rozwiązań, skontaktuj się z nami. <strong>Doświadczeni specjaliści z Ecotech</strong> doradzą Ci, jakie rury stalowe sprawdzą się w określonych warunkach.</p>
 

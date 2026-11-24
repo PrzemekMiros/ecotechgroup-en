@@ -4,7 +4,7 @@ city: "Poznań"
 slug: "rury-stalowe-poznan"
 pubDate: 2021-04-30
 description: "Dostawa rur stalowych do Poznania i okolic."
-source: "https://ecotechgroup.pl/dostawa-rur-stalowych/rury-stalowe-poznan/"
+source: "https://ecotechgroup.pl/pipe-delivery/rury-stalowe-poznan/"
 order: 17
 ---
 
@@ -62,7 +62,7 @@ order: 17
 
 <h2 class="wp-block-heading" id="mt-30">Wyślij zapytanie</h2>
 
-<p><a href="/kontakt#formularz-kontaktowy">Przejdź do formularza kontaktowego</a></p>
+<p><a href="/contact/#formularz-kontaktowy">Przejdź do formularza kontaktowego</a></p>
 
 <blockquote class="wp-block-quote">
 <p>Spółka Eco-Tech od ponad 10 lat prowadzi hurtową sprzedaż rur stalowych. Poznań jest miastem, skąd pochodzi wielu naszych stałych odbiorców. Będzie nam miło, jeśli do nich dołączysz!</p>

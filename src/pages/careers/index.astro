@@ -8,7 +8,7 @@ const jobs = (await getCollection('jobs')).sort((a, b) => a.data.order - b.data.
 const formatDate = new Intl.DateTimeFormat('pl-PL', { day: '2-digit', month: 'long', year: 'numeric' });
 ---
 
-<BaseLayout title="Praca | Eco Tech Group" description="Aktualne oferty pracy w Eco Tech Group" structuredData={[itemListSchema('Praca', jobs.map(({ data }) => ({ name: data.title, path: `/praca/${data.slug}` })))]}>
+<BaseLayout title="Praca | Eco Tech Group" description="Aktualne oferty pracy w Eco Tech Group" structuredData={[itemListSchema('Praca', jobs.map(({ data }) => ({ name: data.title, path: `/careers/${data.slug}` })))]}>
   <PageHero title="Praca" />
 
   <section class="mx-auto max-w-7xl px-5 py-16 md:px-8 md:py-24">
@@ -20,7 +20,7 @@ const formatDate = new Intl.DateTimeFormat('pl-PL', { day: '2-digit', month: 'lo
 
     <div class="mt-12 grid gap-4 md:grid-cols-2">
       {jobs.map((job) => (
-        <a href={`/praca/${job.data.slug}/`} class="group flex min-h-56 flex-col justify-between border border-accent-1/15 bg-white p-6 transition-colors hover:border-accent-1 hover:bg-mist">
+        <a href={`/careers/${job.data.slug}/`} class="group flex min-h-56 flex-col justify-between border border-accent-1/15 bg-white p-6 transition-colors hover:border-accent-1 hover:bg-mist">
           <div>
             <div class="flex flex-wrap items-center gap-x-3 gap-y-1 text-xs font-bold uppercase tracking-[0.12em] text-accent-1">
               {job.data.location && <span>{job.data.location}</span>}

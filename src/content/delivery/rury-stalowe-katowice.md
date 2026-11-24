@@ -4,7 +4,7 @@ city: "Katowice"
 slug: "rury-stalowe-katowice"
 pubDate: 2022-10-07
 description: "Dostawa rur stalowych do Katowic i okolic."
-source: "https://ecotechgroup.pl/dostawa-rur-stalowych/rury-stalowe-katowice/"
+source: "https://ecotechgroup.pl/pipe-delivery/rury-stalowe-katowice/"
 order: 2
 ---
 
@@ -42,7 +42,7 @@ order: 2
 
 <h2 class="wp-block-heading">Wyślij zapytanie</h2>
 
-<p><a href="/kontakt#formularz-kontaktowy">Przejdź do formularza kontaktowego</a></p>
+<p><a href="/contact/#formularz-kontaktowy">Przejdź do formularza kontaktowego</a></p>
 
 <p>Jako <strong>doświadczony dystrybutor rur stalowych</strong> jesteśmy w stanie skutecznie rozwiać wszelkie wątpliwości i udzielić odpowiedzi na każde pytanie. W razie potrzeby pomożemy <strong>w wyborze rur o odpowiednich parametrach</strong>, które idealnie sprawdzą się w danych warunkach. Przekonaj się o naszej dużej elastyczności w rozwiązywaniu problemów i otwartości na potrzeby klientów. Zapraszamy do kontaktu!</p>
 

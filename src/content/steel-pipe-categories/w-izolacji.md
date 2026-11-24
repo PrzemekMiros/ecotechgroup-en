@@ -20,7 +20,7 @@ faq:
 description: "Rury stalowe w izolacji do pracy w wymagających warunkach oraz ochrony antykorozyjnej rurociągów."
 image: "/img/pipes/rury-stalowe-w-izolacji.webp"
 imageAlt: "Rury stalowe w izolacji"
-source: "https://ecotechgroup.pl/rury-stalowe-w-izolacji/"
+source: "https://ecotechgroup.pl/steel-pipes-insulated/"
 order: 4
 ---
 

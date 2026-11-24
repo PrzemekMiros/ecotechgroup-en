@@ -4,7 +4,7 @@ slug: "spawacz-rury-stalowe-glowaczow"
 pubDate: 2025-09-20
 location: "Głowaczów"
 description: "Oferta pracy dla spawacza rur stalowych w Głowaczowie."
-source: "https://ecotechgroup.pl/praca/spawacz-rury-stalowe-glowaczow/"
+source: "https://ecotechgroup.pl/careers/spawacz-rury-stalowe-glowaczow/"
 order: 5
 ---
 

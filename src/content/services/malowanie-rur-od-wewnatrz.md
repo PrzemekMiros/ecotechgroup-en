@@ -3,7 +3,7 @@ title: "Malowanie rur stalowych od wewnątrz"
 pubDate: 2021-04-21
 slug: "malowanie-rur-od-wewnatrz"
 description: "Usługę malowania rur stalowych od wewnątrz realizujemy z wykorzystaniem nowoczesnego sprzętu. Zapewnia on doskonałe efekty, w postaci równomiernie nałożonej farby i dokładnego pokrycia…"
-source: "https://ecotechgroup.pl/uslugi/malowanie-rur-od-wewnatrz/"
+source: "https://ecotechgroup.pl/services/malowanie-rur-od-wewnatrz/"
 order: 6
 image: "/img/posts/2022/12/eco-tech-malowanie-rur.jpeg"
 imageAlt: "|"
@@ -19,7 +19,7 @@ imageAlt: "|"
 
 
 
-<p class="marg-bot-15">Usługę malowania <a href="/rury-stalowe/"><strong>rur stalowych</strong></a> od wewnątrz realizujemy z wykorzystaniem nowoczesnego sprzętu. Zapewnia on doskonałe efekty, w postaci równomiernie nałożonej farby i dokładnego pokrycia całej powierzchni. </p>
+<p class="marg-bot-15">Usługę malowania <a href="/steel-pipes/"><strong>rur stalowych</strong></a> od wewnątrz realizujemy z wykorzystaniem nowoczesnego sprzętu. Zapewnia on doskonałe efekty, w postaci równomiernie nałożonej farby i dokładnego pokrycia całej powierzchni. </p>
 
 
 

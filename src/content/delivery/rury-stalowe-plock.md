@@ -4,7 +4,7 @@ city: "Płock"
 slug: "rury-stalowe-plock"
 pubDate: 2022-10-07
 description: "Dostawa rur stalowych do Płocka i okolic."
-source: "https://ecotechgroup.pl/dostawa-rur-stalowych/rury-stalowe-plock/"
+source: "https://ecotechgroup.pl/pipe-delivery/rury-stalowe-plock/"
 order: 5
 ---
 
@@ -14,7 +14,7 @@ order: 5
 
 <h2 class="wp-block-heading">Dlaczego warto wybrać rury stalowe z naszej oferty?</h2>
 
-<p>Jesteśmy jednym z największych dystrybutorów<strong> <a href="/rury-stalowe/">rur stalowych</a></strong> w Polsce. Decyduje o tym nie tylko nasze doświadczenie, ale także wysokie standardy. Starannie weryfikujemy producentów rur, z którymi współpracujemy. Mamy również własne procedury, sprawdzające jakość dostarczanych do nas produktów.</p>
+<p>Jesteśmy jednym z największych dystrybutorów<strong> <a href="/steel-pipes/">rur stalowych</a></strong> w Polsce. Decyduje o tym nie tylko nasze doświadczenie, ale także wysokie standardy. Starannie weryfikujemy producentów rur, z którymi współpracujemy. Mamy również własne procedury, sprawdzające jakość dostarczanych do nas produktów.</p>
 
 <p>To ważny atut dla naszych klientów. Dzięki temu mają oni pewność, że w naszej ofercie znajdują się <strong>wyłącznie solidne rury stalowe</strong> o potwierdzonych parametrach technicznych.</p>
 
@@ -44,7 +44,7 @@ order: 5
 
 <h2 class="wp-block-heading">Wyślij zapytanie</h2>
 
-<p><a href="/kontakt#formularz-kontaktowy">Przejdź do formularza kontaktowego</a></p>
+<p><a href="/contact/#formularz-kontaktowy">Przejdź do formularza kontaktowego</a></p>
 
 <p>Oferujemy <strong>szybką dostawę, nawet w kilka dni roboczych</strong>, własny transport i korzystne warunki płatności. Na każdym etapie realizacji zamówienia możesz korzystać ze wsparcia opiekuna handlowego, który odpowie na Twoje pytania i pomoże rozwiązać ewentualne problemy.</p>
 

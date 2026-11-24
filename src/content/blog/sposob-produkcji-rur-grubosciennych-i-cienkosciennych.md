@@ -57,7 +57,7 @@ imageAlt: "Rury cienkościenne vs grubościenne - kluczowe różnice"
 
 
 
-<p>W zależności od warunków pracy i środowiska eksploatacji dobór odpowiedniego zabezpieczenia antykorozyjnego ma istotny wpływ na trwałość całej instalacji. Więcej informacji o dostępnych rozwiązaniach można znaleźć w zakładce poświęconej izolowaniu rur stalowych: <a href="/uslugi/izolowanie-rur-stalowych/">/uslugi/izolowanie-rur-stalowych/</a></p>
+<p>W zależności od warunków pracy i środowiska eksploatacji dobór odpowiedniego zabezpieczenia antykorozyjnego ma istotny wpływ na trwałość całej instalacji. Więcej informacji o dostępnych rozwiązaniach można znaleźć w zakładce poświęconej izolowaniu rur stalowych: <a href="/services/izolowanie-rur-stalowych/">/services/izolowanie-rur-stalowych/</a></p>
 
 
 

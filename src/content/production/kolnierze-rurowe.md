@@ -13,7 +13,7 @@ imageAlt: "|||"
 
 
 
-<p>Kołnierze rurowe to kolejne wysokojakościowe wyroby z katalogu hurtowni stali Eco-Tech. Udostępniamy do sprzedaży szeroką gamę wzorów kołnierzy. Wszystkie wykazują zgodność z wymogami określonymi w normach europejskich oraz są produktami pochodzącymi od sprawdzonych producentów stali – polskich i zagranicznych. Oprócz prowadzonej sprzedaży kołnierzy rurowych, oferujemy także usługę ich dostawy oraz montażu. Realizujemy <strong><a href="/dostawa-rur-stalowych/">dostawy</a></strong> na terenie całej Polski i krajów UE.</p>
+<p>Kołnierze rurowe to kolejne wysokojakościowe wyroby z katalogu hurtowni stali Eco-Tech. Udostępniamy do sprzedaży szeroką gamę wzorów kołnierzy. Wszystkie wykazują zgodność z wymogami określonymi w normach europejskich oraz są produktami pochodzącymi od sprawdzonych producentów stali – polskich i zagranicznych. Oprócz prowadzonej sprzedaży kołnierzy rurowych, oferujemy także usługę ich dostawy oraz montażu. Realizujemy <strong><a href="/pipe-delivery/">dostawy</a></strong> na terenie całej Polski i krajów UE.</p>
 
 
 

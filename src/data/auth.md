@@ -18,7 +18,7 @@ Nie należy przesyłać nagłówka `Authorization`. Serwis nie publikuje metadan
 
 ## Działania wymagające zgody człowieka
 
-Zapytania ofertowe zawierają dane osobowe i wymagają świadomej zgody użytkownika. Agent powinien otworzyć formularz `https://ecotechgroup.pl/kontakt/`, przedstawić użytkownikowi treść i uzyskać jego zgodę przed wysłaniem. Publiczny interfejs tylko do odczytu nie wysyła zapytań i nie składa zamówień.
+Zapytania ofertowe zawierają dane osobowe i wymagają świadomej zgody użytkownika. Agent powinien otworzyć formularz `https://ecotechgroup.pl/contact/`, przedstawić użytkownikowi treść i uzyskać jego zgodę przed wysłaniem. Publiczny interfejs tylko do odczytu nie wysyła zapytań i nie składa zamówień.
 
 ## MCP i A2A
 

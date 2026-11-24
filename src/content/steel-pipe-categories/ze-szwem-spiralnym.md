@@ -14,7 +14,7 @@ faq:
 description: "Rury stalowe ze szwem spiralnym przeznaczone do wymagających zastosowań."
 image: "/img/pipes/Rury-stalowe-ze-szwem-spiralnym.webp"
 imageAlt: "Rury stalowe ze szwem spiralnym"
-source: "https://ecotechgroup.pl/rury-stalowe-ze-szwem-spiralnym/"
+source: "https://ecotechgroup.pl/steel-pipes-spiral-welded/"
 order: 2
 ---
 
