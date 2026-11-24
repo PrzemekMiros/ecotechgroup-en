@@ -1,0 +1,47 @@
+---
+import { getCollection } from "astro:content";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import PageHero from "../../components/PageHero.astro";
+import OfferTile from "../../components/OfferTile.astro";
+import { itemListSchema } from "../../lib/structured-data";
+const services = (await getCollection("services")).sort(
+  (a, b) => a.data.order - b.data.order,
+);
+const names: Record<string, string> = {
+  "spawanie-i-produkcja-rurociagow-stalowych":
+    "Steel pipeline welding and fabrication",
+  "skup-rur-stalowych": "Steel pipe purchase",
+  "montaz-rur-stalowych-dwudzielnych": "Split steel pipe installation",
+  "malowanie-rur-od-wewnatrz": "Internal pipe coating",
+  "laminowanie-rur-stalowych": "Steel pipe lamination",
+  "izolowanie-rur-stalowych": "Steel pipe insulation",
+};
+---
+
+<BaseLayout
+  title="Services | Eco Tech Group"
+  description="Steel-pipe processing, fabrication, installation and protection services."
+  structuredData={[
+    itemListSchema(
+      "Services",
+      services.map(({ data }) => ({
+        name: names[data.slug] || data.title,
+        path: `/uslugi/${data.slug}`,
+      })),
+    ),
+  ]}
+>
+  <PageHero title="Services" />
+  <section class="mx-auto max-w-7xl px-5 py-16 md:px-8 md:py-24">
+    <div class="grid gap-x-8 gap-y-12 md:grid-cols-2">
+      {services.map((service) => (
+        <OfferTile
+          href={`/uslugi/${service.data.slug}/`}
+          title={names[service.data.slug] || service.data.title}
+          image={service.data.image}
+          imageAlt={service.data.imageAlt}
+        />
+      ))}
+    </div>
+  </section>
+</BaseLayout>

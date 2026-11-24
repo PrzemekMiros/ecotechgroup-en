@@ -1,47 +1,73 @@
 <script>
-  import { detectSource, getSessionSource } from '../lib/lead-source.mjs';
+  import { detectSource, getSessionSource } from "../lib/lead-source.mjs";
   function initialiseForms() {
-  document.querySelectorAll<HTMLFormElement>('.contact-form').forEach((form) => {
-    if (form.dataset.initialised) return;
-    form.dataset.initialised = 'true';
-    const button = form.querySelector<HTMLButtonElement>('button[type="submit"]');
-    const status = form.querySelector<HTMLElement>('.contact-form-status');
-
-    form.addEventListener('submit', async (event) => {
-      event.preventDefault();
-      const data = Object.fromEntries(new FormData(form).entries());
-      try {
-        data.source = JSON.stringify(getSessionSource(sessionStorage, location.href, document.referrer));
-      } catch {
-        data.source = JSON.stringify(detectSource(location.href, document.referrer));
-      }
-      data.formPage = location.pathname;
-      data.formId = form.id || form.dataset.formId || 'contact-form';
-      const required = ['name', 'message'];
-      const hasContact = String(data.email || '').trim() || String(data.phone || '').trim();
-      if (required.some((field) => !String(data[field] || '').trim()) || !hasContact || !data.privacy) {
-        if (status) status.textContent = 'Podaj imię, wiadomość, e-mail lub telefon oraz zaakceptuj zgodę.';
-        return;
-      }
-
-      if (button) button.disabled = true;
-      if (status) status.textContent = 'Wysyłanie…';
-      try {
-        const response = await fetch('/api/lead', {
-          method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(data),
+    document
+      .querySelectorAll<HTMLFormElement>(".contact-form")
+      .forEach((form) => {
+        if (form.dataset.initialised) return;
+        form.dataset.initialised = "true";
+        const button = form.querySelector<HTMLButtonElement>(
+          'button[type="submit"]',
+        );
+        const status = form.querySelector<HTMLElement>(".contact-form-status");
+        form.addEventListener("submit", async (event) => {
+          event.preventDefault();
+          const data = Object.fromEntries(new FormData(form).entries());
+          try {
+            data.source = JSON.stringify(
+              getSessionSource(
+                sessionStorage,
+                location.href,
+                document.referrer,
+              ),
+            );
+          } catch {
+            data.source = JSON.stringify(
+              detectSource(location.href, document.referrer),
+            );
+          }
+          data.formPage = location.pathname;
+          data.formId = form.id || form.dataset.formId || "contact-form";
+          const hasContact =
+            String(data.email || "").trim() || String(data.phone || "").trim();
+          if (
+            !String(data.name || "").trim() ||
+            !String(data.message || "").trim() ||
+            !hasContact ||
+            !data.privacy
+          ) {
+            if (status)
+              status.textContent =
+                "Enter your name and message, provide an email address or phone number, and accept the consent.";
+            return;
+          }
+          if (button) button.disabled = true;
+          if (status) status.textContent = "Sending…";
+          try {
+            const response = await fetch("/api/lead", {
+              method: "POST",
+              headers: { "Content-Type": "application/json" },
+              body: JSON.stringify(data),
+            });
+            const result = await response.json().catch(() => ({}));
+            if (!response.ok)
+              throw new Error(result.message || "The form could not be sent.");
+            form.reset();
+            if (status)
+              status.textContent =
+                result.message || "Thank you — your enquiry has been sent.";
+          } catch (error) {
+            if (status)
+              status.textContent =
+                error instanceof Error
+                  ? error.message
+                  : "The form could not be sent.";
+          } finally {
+            if (button) button.disabled = false;
+          }
         });
-        const result = await response.json().catch(() => ({}));
-        if (!response.ok) throw new Error(result.message || 'Nie udało się wysłać formularza.');
-        form.reset();
-        if (status) status.textContent = result.message || 'Dziękujemy — zapytanie zostało wysłane.';
-      } catch (error) {
-        if (status) status.textContent = error instanceof Error ? error.message : 'Nie udało się wysłać formularza.';
-      } finally {
-        if (button) button.disabled = false;
-      }
-    });
-  });
+      });
   }
   initialiseForms();
-  document.addEventListener('astro:page-load', initialiseForms);
+  document.addEventListener("astro:page-load", initialiseForms);
 </script>

@@ -32,7 +32,11 @@ function Breakdown({ title, description, rows, field }: { title: string; descrip
 }
 function LeadDetails({ row, close }: { row: LeadRow; close: () => void }) {
   const dialog = useRef<HTMLDialogElement>(null);
-  useEffect(() => { dialog.current?.showModal(); }, []);
+  useEffect(() => {
+    const element = dialog.current;
+    element?.showModal();
+    return () => { element?.close(); };
+  }, []);
   return <dialog ref={dialog} className="ls-dialog" aria-labelledby="ls-detail-title" onClose={close} onClick={event => { if (event.target === event.currentTarget) close(); }}>
     <div className="ls-dialog-head"><div><span className="ls-eyebrow">SZCZEGÓŁY ZAPYTANIA</span><h2 id="ls-detail-title">{row.name || 'Zapytanie archiwalne'}</h2><p className="ls-muted">{date(row.submittedAt)} · {date(row.submittedAt, true)}</p></div><button className="ls-icon-button" onClick={close} aria-label="Zamknij szczegóły" autoFocus><Icon kind="close" /></button></div>
     <div className="ls-dialog-body"><Badge channel={row.channel} />
@@ -43,7 +47,7 @@ function LeadDetails({ row, close }: { row: LeadRow; close: () => void }) {
       </dl></section>
       <section><h3>{row.product || 'Wiadomość'}</h3><div className="ls-message">{row.message || 'Ten archiwalny wpis zawiera tylko statystyki. Treść wiadomości nie była zapisywana.'}</div></section>
       <section><h3>Skąd pochodzi zapytanie?</h3><dl className="ls-details-grid">
-        {([['Strona formularza', row.formPage], ['Pierwsza strona wejścia', row.landingPage], ['Kampania', row.utmCampaign], ['Źródło / medium', [row.utmSource, row.utmMedium].filter(Boolean).join(' / ')], ['Witryna odsyłająca', row.referrerHost], ['Identyfikator formularza', row.formId]] as const).map(([title, value]) => <div key={title}><dt>{title}</dt><dd>{value || 'Brak danych'}</dd></div>)}
+        {([['Strona formularza', row.formPage], ['Strona wejścia źródła', row.landingPage], ['Kampania', row.utmCampaign], ['Źródło / medium', [row.utmSource, row.utmMedium].filter(Boolean).join(' / ')], ['Witryna odsyłająca', row.referrerHost], ['Identyfikator formularza', row.formId]] as const).map(([title, value]) => <div key={title}><dt>{title}</dt><dd>{value || 'Brak danych'}</dd></div>)}
       </dl></section>
     </div><div className="ls-dialog-foot"><span className="ls-muted">Czas lokalny: Warszawa</span><button className="ls-button" onClick={close}>Zamknij</button></div>
   </dialog>;
@@ -77,19 +81,19 @@ export function LeadStatisticsView({ rows, days, setDays, loading, error, refres
       <div className="ls-view-bar"><nav aria-label="Widok zapytań"><button aria-pressed={view === 'inbox'} onClick={() => setView('inbox')}>Zapytania <span>{number(filtered.length)}</span></button><button aria-pressed={view === 'sources'} onClick={() => setView('sources')}>Analiza źródeł</button></nav><span className="ls-updated">{updatedAt ? `Aktualizacja: ${date(updatedAt.toISOString(), true)}` : ''}</span></div>
       {!filtered.length ? <div className="ls-empty"><span className="ls-empty-icon"><Icon kind="inbox" /></span><h2>{hasFilter ? 'Brak pasujących zapytań' : 'Tutaj pojawią się nowe zapytania'}</h2><p>{hasFilter ? 'Zmień wyszukiwaną frazę lub wybierz inny kanał.' : 'W tym okresie nie ma jeszcze wysłanych formularzy. Wybierz dłuższy okres lub wróć po otrzymaniu zapytania.'}</p>{hasFilter && <button className="ls-button" onClick={() => { setSearch(''); setChannel('all'); }}>Wyczyść filtry</button>}</div> : view === 'inbox' ? <section className="ls-panel ls-inbox" aria-label="Lista zapytań">
         <div className="ls-table-wrap"><table className="ls-table"><thead><tr><th>Klient / zapytanie</th><th>Źródło</th><th>Strona formularza</th><th>Otrzymano</th><th><span className="ls-sr-only">Szczegóły</span></th></tr></thead><tbody>
-          {filtered.slice(activePage * 10, activePage * 10 + 10).map(row => <tr key={row._id}><td><div className="ls-client"><span className="ls-avatar" aria-hidden="true">{(row.name || '?').trim().slice(0, 1).toUpperCase()}</span><div><button className="ls-client-name" onClick={() => setSelected(row)}>{row.name || 'Zapytanie archiwalne'}</button><span className="ls-preview">{row.product || row.message || row.company || 'Brak treści wiadomości'}</span></div></div></td><td><Badge channel={row.channel} /><span className="ls-table-secondary">{row.utmCampaign || row.utmSource || '—'}</span></td><td><span className="ls-path" title={row.formPage}>{row.formPage || 'Nieznana'}</span></td><td className="ls-date">{date(row.submittedAt)}<span className="ls-table-secondary">{date(row.submittedAt, true)}</span></td><td><button className="ls-icon-button" aria-label={`Otwórz zapytanie: ${row.name || date(row.submittedAt)}`} onClick={() => setSelected(row)}><Icon kind="arrow" /></button></td></tr>)}
+          {filtered.slice(activePage * 10, activePage * 10 + 10).map(row => <tr key={row._id}><td><div className="ls-client"><span className="ls-avatar" aria-hidden="true">{(row.name || '?').trim().slice(0, 1).toUpperCase()}</span><div><button className="ls-client-name" onClick={() => setSelected(row)}>{row.name || 'Zapytanie archiwalne'}</button><span className="ls-preview">{row.product || row.message || row.company || 'Brak treści wiadomości'}</span><span className="ls-mobile-meta">{label(row.channel)} · {date(row.submittedAt)} · {date(row.submittedAt, true)}</span></div></div></td><td><Badge channel={row.channel} /><span className="ls-table-secondary">{row.utmCampaign || row.utmSource || '—'}</span></td><td><span className="ls-path" title={row.formPage}>{row.formPage || 'Nieznana'}</span></td><td className="ls-date">{date(row.submittedAt)}<span className="ls-table-secondary">{date(row.submittedAt, true)}</span></td><td><button className="ls-icon-button" aria-label={`Otwórz zapytanie: ${row.name || date(row.submittedAt)}`} onClick={() => setSelected(row)}><Icon kind="arrow" /></button></td></tr>)}
         </tbody></table></div>
         <div className="ls-pagination"><span>{activePage * 10 + 1}–{Math.min((activePage + 1) * 10, filtered.length)} z {number(filtered.length)} zapytań</span><div><button className="ls-button" disabled={!activePage} onClick={() => setPage(activePage - 1)}>Poprzednie</button><span>{activePage + 1} / {pages}</span><button className="ls-button" disabled={activePage + 1 >= pages} onClick={() => setPage(activePage + 1)}>Następne</button></div></div>
       </section> : <div className="ls-analysis">
         <Breakdown title="Kanały pozyskania" description="Co przyciąga klientów do Twojej strony?" rows={filtered} field="channel" />
         <Breakdown title="Strony formularzy" description="Na których stronach klienci wysyłają zapytania?" rows={filtered} field="formPage" />
         <Breakdown title="Kampanie" description="Zapytania przypisane do kampanii UTM." rows={filtered} field="utmCampaign" />
-        <Breakdown title="Strony wejścia" description="Pierwsza odwiedzona strona w sesji." rows={filtered} field="landingPage" />
+        <Breakdown title="Strony wejścia" description="Strona wejścia przypisana do źródła." rows={filtered} field="landingPage" />
         <Breakdown title="Źródła UTM" description="Źródła oznaczone w linkach do strony." rows={filtered} field="utmSource" />
         <Breakdown title="Witryny odsyłające" description="Strony, z których przyszli klienci." rows={filtered} field="referrerHost" />
       </div>}
     </>}
-    <footer className="ls-footer"><span>Statystyki wysłanych formularzy · czas: Warszawa</span><details><summary>Jak liczymy źródła?</summary><p>Źródło to pierwsze wejście w sesji karty przeglądarki. Brak informacji o witrynie odsyłającej może oznaczać wejście bezpośrednie lub ukryte źródło. Dane obejmują zapisane wysłania, nie unikalne osoby, wizyty ani współczynnik konwersji. Filtry dotyczą listy, podsumowania i analizy źródeł.</p></details></footer>
+    <footer className="ls-footer"><span>Statystyki wysłanych formularzy · czas: Warszawa</span><details><summary>Jak liczymy źródła?</summary><p>Źródło jest zapamiętywane w karcie przeglądarki. Nowe wejście z UTM lub identyfikatorem kliknięcia aktualizuje źródło; przejścia między podstronami je zachowują. Brak informacji o witrynie odsyłającej może oznaczać wejście bezpośrednie lub ukryte źródło. Dane obejmują zapisane wysłania, nie unikalne osoby, wizyty ani współczynnik konwersji. Filtry dotyczą listy, podsumowania i analizy źródeł.</p></details></footer>
     {selected && <LeadDetails row={selected} close={() => setSelected(null)} />}
   </div></main>;
 }

@@ -29,3 +29,27 @@ test('blocked storage and malformed source do not prevent attribution', () => {
   for (const value of ['null', '[]', '{', '{"channel":"fake"}', '{"channel":"__proto__"}']) assert.equal(readSource(value), undefined);
   assert.equal(readSource(JSON.stringify({ channel: 'ads', utmCampaign: 'x'.repeat(400) })).utmCampaign.length, 200);
 });
+
+test('a Google Ads visit replaces an earlier direct visit in the same tab', () => {
+  const values = new Map();
+  const storage = { getItem: key => values.get(key), setItem: (key, value) => values.set(key, value) };
+  getSessionSource(storage, 'https://ecotechnew.netlify.app/kontakt/', '');
+  const result = getSessionSource(storage, 'https://ecotechnew.netlify.app/kontakt/?utm_source=google&utm_medium=cpc&utm_campaign=test', '');
+  assert.equal(result.channel, 'ads');
+  assert.equal(result.utmSource, 'google');
+  assert.equal(result.utmMedium, 'cpc');
+  assert.equal(result.utmCampaign, 'test');
+  assert.deepEqual(getSessionSource(storage, 'https://ecotechnew.netlify.app/produkt/', ''), result);
+});
+
+test('a new campaign replaces an earlier campaign, and click IDs are not stored', () => {
+  const values = new Map();
+  const storage = { getItem: key => values.get(key), setItem: (key, value) => values.set(key, value) };
+  getSessionSource(storage, 'https://ecotechnew.netlify.app/?utm_source=newsletter&utm_medium=email', '');
+  const result = getSessionSource(storage, 'https://ecotechnew.netlify.app/rury/?gclid=private-click-id', '');
+  assert.equal(result.channel, 'ads');
+  assert.equal(result.utmSource, '');
+  assert.equal(result.landingPage, '/rury/');
+  assert.ok(!JSON.stringify([...values.values()]).includes('private-click-id'));
+  assert.deepEqual(getSessionSource(storage, 'https://ecotechnew.netlify.app/kontakt/?utm_source=', ''), result);
+});

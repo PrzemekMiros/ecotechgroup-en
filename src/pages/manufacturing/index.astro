@@ -1,0 +1,51 @@
+---
+import { getCollection } from "astro:content";
+import { productionUrl } from "../../lib/production-url";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import PageHero from "../../components/PageHero.astro";
+import OfferTile from "../../components/OfferTile.astro";
+import { itemListSchema } from "../../lib/structured-data";
+const productionItems = (await getCollection("production")).sort(
+  (a, b) => a.data.order - b.data.order,
+);
+const names: Record<string, string> = {
+  "pale-rurowe": "Steel pipe piles",
+  "kolnierze-rurowe": "Pipe flanges",
+  "paloscianki-rurowe-combiwall": "Combiwall pipe sheet piles",
+  "produkcja-i-walcowanie-blach": "Plate fabrication and rolling",
+  "produkcja-kolan-segmentowych": "Segment bends",
+  "produkcja-kominow-stalowych-przemyslowych": "Industrial steel chimneys",
+  "produkcja-ploz-dystansowych": "Spacer skids",
+  "produkcja-podpor-mostowych": "Bridge bearings",
+  "produkcja-zbiornikow-stalowych": "Steel tanks",
+  "rozpory-rurowe-systemowe": "System pipe struts",
+};
+---
+
+<BaseLayout
+  title="Manufacturing | Eco Tech Group"
+  description="Fabrication of steel components and structures for industrial and infrastructure projects."
+  structuredData={[
+    itemListSchema(
+      "Manufacturing",
+      productionItems.map(({ data }) => ({
+        name: names[data.slug] || data.title,
+        path: productionUrl(data.slug),
+      })),
+    ),
+  ]}
+>
+  <PageHero title="Manufacturing" />
+  <section class="mx-auto max-w-7xl px-5 py-16 md:px-8 md:py-24">
+    <div class="grid gap-x-8 gap-y-12 md:grid-cols-2">
+      {productionItems.map((item) => (
+        <OfferTile
+          href={productionUrl(item.data.slug)}
+          title={names[item.data.slug] || item.data.title}
+          image={item.data.image}
+          imageAlt={item.data.imageAlt}
+        />
+      ))}
+    </div>
+  </section>
+</BaseLayout>

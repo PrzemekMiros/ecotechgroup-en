@@ -1,0 +1,158 @@
+---
+import { getCollection, type CollectionEntry } from "astro:content";
+import SteelPipeFilters from "../components/SteelPipeFilters.astro";
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { pageUrl } from "../lib/structured-data";
+import { englishCategoryName, englishProductName } from "../lib/english";
+import { englishSlug, urls } from "../lib/urls";
+export const prerender = true;
+export async function getStaticPaths() {
+  const categories = await getCollection("steelPipeCategories");
+  return categories.map((category) => ({
+    params: { category: englishSlug(category.data.slug) },
+    props: { category },
+  }));
+}
+interface Props {
+  category: CollectionEntry<"steelPipeCategories">;
+}
+const { category } = Astro.props;
+const products = (await getCollection("steelPipeProducts"))
+  .filter((product) => product.data.category === category.data.slug)
+  .sort((a, b) => a.data.order - b.data.order);
+const name = englishCategoryName(category.data.slug);
+const descriptions: Record<string, string> = {
+  "bez-szwu":
+    "Seamless steel pipes are selected for demanding structural and pressure applications where a continuous pipe wall is required.",
+  dwudzielne:
+    "Split steel pipes are used to protect, repair or route existing pipelines and infrastructure.",
+  uzywane:
+    "Used steel pipes offer a cost-effective solution for selected construction and engineering applications.",
+  "w-izolacji":
+    "Insulated steel pipes combine a steel substrate with protective systems selected for the operating environment.",
+  "ze-szwem-spiralnym":
+    "Spiral-welded steel pipes are a versatile choice for large-diameter pipeline and infrastructure applications.",
+  "ze-szwem-wzdluznym":
+    "Longitudinally welded steel pipes are available in a broad range of dimensions for structural and pipeline uses.",
+  "zwijane-z-blachy":
+    "Plate-rolled steel pipes are manufactured for large-diameter and project-specific applications.",
+};
+const intro =
+  descriptions[category.data.slug] ||
+  "Steel pipes selected for your technical and project requirements.";
+---
+
+<BaseLayout
+  title={`${name} | Eco Tech Group`}
+  description={intro}
+  image={category.data.image}
+  imageAlt={name}
+  structuredData={[
+    {
+      "@type": "ItemList",
+      name,
+      numberOfItems: products.length,
+      itemListElement: products.map(({ data }, index) => ({
+        "@type": "ListItem",
+        position: index + 1,
+        name: englishProductName(data.category, data.specification),
+      url: pageUrl(urls.product(data.slug)),
+      })),
+    },
+  ]}
+>
+  <article class="pipe-category-page bg-white pt-32 text-ink lg:pt-38">
+    <div class="mx-auto max-w-7xl px-5 md:px-8">
+      <nav
+        class="flex flex-wrap items-center gap-x-2 py-6 text-sm text-ink/55"
+        aria-label="Breadcrumb"
+      >
+        <a href="/" class="hover:text-accent-1">
+          Home
+        </a>
+        <span>/</span>
+        <a href={urls.steelPipes} class="hover:text-accent-1">
+          Steel pipes
+        </a>
+        <span>/</span>
+        <span aria-current="page">{name}</span>
+      </nav>
+      <div class="grid lg:grid-cols-[minmax(0,1fr)_23rem] lg:gap-14">
+        <section class="min-w-0 pb-16 pt-4 lg:pb-24">
+          <h1 class="text-3xl font-semibold leading-tight tracking-[-0.045em] text-[#142b3a] md:text-4xl">
+            {name}
+          </h1>
+          <p class="mt-6 max-w-3xl border-l-4 border-accent-1 bg-mist px-5 py-5 text-base leading-7 text-ink/75">
+            {intro}
+          </p>
+          <section class="mt-12">
+            <p class="eyebrow">Products</p>
+            <h2 class="mt-2 text-2xl font-semibold text-[#142b3a]">
+              Available pipes
+            </h2>
+            <p class="mt-3 text-sm text-ink/55">{products.length} products</p>
+            {products.length ? (
+              <ul class="mt-6 divide-y divide-ink/10 border-y border-ink/10">
+                {products.map((product) => (
+                  <li>
+                    <a
+                      href={urls.product(product.data.slug)}
+                      class="group grid items-center gap-2 px-4 py-4 hover:bg-mist sm:grid-cols-[10rem_minmax(0,1fr)_auto]"
+                    >
+                      <span class="text-xs font-bold uppercase tracking-[0.12em] text-accent-1">
+                        {product.data.specification}
+                      </span>
+                      <span class="text-base font-semibold text-[#142b3a] group-hover:text-accent-1">
+                        {englishProductName(
+                          product.data.category,
+                          product.data.specification,
+                        )}
+                      </span>
+                      <span class="hidden text-sm font-semibold text-accent-1 sm:inline">
+                        Details →
+                      </span>
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            ) : (
+              <p class="mt-6 text-ink/65">
+                Products in this category will be added soon.
+              </p>
+            )}
+          </section>
+          <section class="mt-16 border-t border-ink/15 pt-8">
+            <h2 class="text-2xl font-semibold text-[#142b3a]">
+              Selection support
+            </h2>
+            <p class="mt-4 max-w-3xl leading-7 text-ink/75">
+              Tell us the required diameter, wall thickness, length, steel
+              grade, standard, quantity and delivery location. We will confirm
+              availability and prepare an offer matching your project
+              requirements.
+            </p>
+            <a
+              href={urls.contact}
+              class="mt-6 inline-flex bg-accent-1 px-6 py-3 text-sm font-semibold text-white hover:bg-accent-1/85"
+            >
+              Request a quotation
+            </a>
+          </section>
+        </section>
+        <SteelPipeFilters category={category.data.slug} />
+      </div>
+    </div>
+  </article>
+</BaseLayout>
+<style is:global>
+  body:has(.pipe-category-page) > header {
+    background: #fff;
+    color: var(--color-ink);
+  }
+  body:has(.pipe-category-page) > header a {
+    color: var(--color-ink);
+  }
+  body:has(.pipe-category-page) > header a.bg-accent-1 {
+    color: #fff;
+  }
+</style>

@@ -1,4 +1,8 @@
 <script>
   import { getSessionSource } from '../lib/lead-source.mjs';
-  try { getSessionSource(sessionStorage, location.href, document.referrer); } catch {}
+  function captureSource() {
+    try { getSessionSource(sessionStorage, location.href, document.referrer); } catch {}
+  }
+  captureSource();
+  document.addEventListener('astro:page-load', captureSource);
 </script>

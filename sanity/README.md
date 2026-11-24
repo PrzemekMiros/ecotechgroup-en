@@ -4,11 +4,13 @@
 
 Formularze trafiają wyłącznie do Sanity przez `/api/lead`. Firmao jest wyłączone; dawny adres `/api/firmao-lead` obsługuje ten sam zapis do Sanity. Zakładka **Statystyki formularzy** pokazuje kanały, strony formularzy i wejścia, kampanie, źródła UTM oraz treść i dane kontaktowe zapytań. Podsumowania obejmują wszystkie zapisane zdarzenia w okresie 7/30/90/365 dni. Odświeżanie jest ręczne.
 
+Panel zawiera widoki **Zapytania** i **Analiza źródeł**. Wyszukiwanie po kliencie, kontakcie, treści, produkcie, stronie i kampanii oraz filtr kanału działają na listę, podsumowanie i analizę. Lista pokazuje 10 wpisów na stronę. Kliknięcie nazwy klienta lub strzałki otwiera wiadomość, dane kontaktowe i szczegóły źródła; okno można zamknąć klawiszem Escape. Linki e-mail i telefon otwierają odpowiednie aplikacje. Analiza pokazuje początkowo pięć najczęstszych pozycji z możliwością rozwinięcia całej listy.
+
 1. W Sanity Manage utwórz token API z prawem zapisu w docelowym datasecie (np. Editor; przy dostępności własnych ról ogranicz zapis do typu `leadStatistic`).
 2. Ustaw `SANITY_API_WRITE_TOKEN` w `.env` i zmiennych serwerowych hostingu. Bez prefiksów `PUBLIC_` ani `SANITY_STUDIO_`. Projekt i dataset są wspólne ze Studio. Działa również przy `CONTENT_SOURCE=local`.
 3. Przebuduj i wdróż aplikację oraz Studio. Sprawdź kontrolne wysłanie z `/kontakt/?utm_source=google&utm_medium=cpc&utm_campaign=test` w panelu Sanity.
 
-Źródło oznacza pierwsze wejście w sesji karty przeglądarki (sessionStorage). Strona wysłania jest zapisywana osobno. Ścieżki nie zawierają query string ani fragmentów. Zapisujemy pola UTM, ale nie wartości identyfikatorów kliknięć. Nie umieszczaj danych osobowych w UTM. Sam `fbclid` oznacza social media; reklamy Meta oznaczaj `utm_medium=paid_social`.
+Źródło jest zapamiętywane w sesji karty przeglądarki (sessionStorage). Nowe wejście z niepustymi UTM lub identyfikatorem kliknięcia zastępuje poprzednie źródło. Zwykłe przejścia między podstronami zachowują źródło i stronę wejścia kampanii; bez kampanii zachowujemy pierwsze wejście. Strona wysłania jest zapisywana osobno. Ścieżki nie zawierają query string ani fragmentów. Zapisujemy pola UTM, ale nie wartości identyfikatorów kliknięć. Nie umieszczaj danych osobowych w UTM. Sam `fbclid` oznacza social media; reklamy Meta oznaczaj `utm_medium=paid_social`.
 
 Dokumenty `leadStatistics.<uuid>` zawierają dane kontaktowe, treść zapytania, informację o zaakceptowaniu zgody i źródło. Nie zapisujemy IP. Identyfikatory z kropką ograniczają anonimowy odczyt także w publicznym datasecie ([dokumentacja Sanity](https://www.sanity.io/docs/content-lake/keeping-your-data-safe)). Dostęp mają uprawnieni użytkownicy projektu. Dawne wpisy mogą zawierać wyłącznie statystyki.
 

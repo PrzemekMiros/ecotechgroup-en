@@ -28,7 +28,12 @@ export function readSource(value) {
 export function getSessionSource(storage, href, referrer) {
   let saved;
   try { saved = readSource(storage.getItem(sourceStorageKey)); } catch {}
-  if (saved) return saved;
+  // An explicitly tagged visit starts a new attribution, even in an existing tab.
+  // Ordinary navigation must retain the campaign's original landing page.
+  const params = new URL(href).searchParams;
+  const tagged = ['utm_source', 'utm_medium', 'utm_campaign', 'utm_term', 'utm_content',
+    'gclid', 'gbraid', 'wbraid', 'msclkid', 'ttclid', 'fbclid'].some(key => !!trim(params.get(key)));
+  if (saved && !tagged) return saved;
   const source = detectSource(href, referrer);
   try { storage.setItem(sourceStorageKey, JSON.stringify(source)); } catch {}
   return source;
